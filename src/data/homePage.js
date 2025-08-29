@@ -29,7 +29,8 @@ const homePage = {
     //top header
     header: {
       stars: true,
-      imagePath: "/src/assets/uft-2006-Cessna-Skyhawk-172s.webp",
+      imagePath:
+        "/src/assets/fleet-uft-cirrus-sr22-g6-sarasota-flight-trainingIMG_8962.jpg",
       imageAlt:
         "Universal Aircraft Maintenance hangar with aircraft being serviced under clear Florida skies",
       headerH1: `Trusted <br class="hidden lg:block" ><div class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">Aircraft Maintenance</div>`,
@@ -75,7 +76,7 @@ const homePage = {
         },
       ],
       imageLegend: `Paul & Frank<br><small class="text-white font-normal text-sm">Lead Technicians at Universal Aircraft Maintenance</small>`,
-      imagePath: "/src/assets/uft-jose-santos-ceo.jpg",
+      imagePath: "/src/assets/uft-Paul-Hopkins-Mechanic.jpg",
       imageAlt: "Universal Aircraft Maintenance team working on an aircraft",
     },
 
@@ -88,7 +89,7 @@ const homePage = {
         `Contact our team today to discuss your maintenance needs and schedule your next service appointment.`,
       ],
       imageLegend: ``,
-      imagePath: "/src/assets/uft-flight-school-right-for-me.jpg",
+      imagePath: "/src/assets/uft-Frank-Ferney-Mechanic.jpg",
       imageAlt: "Technician inspecting aircraft engine inside hangar",
       buttons: [
         {
