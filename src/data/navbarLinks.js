@@ -1,5 +1,10 @@
 export const navbarLinks = [
   {
+    name: "Home",
+    link: "/",
+    submenu: [],
+  },
+  {
     name: "Services",
     link: "/services/maintenance",
     submenu: [

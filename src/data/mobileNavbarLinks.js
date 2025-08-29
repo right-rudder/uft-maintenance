@@ -1,5 +1,10 @@
 export const mobileNavbarLinks = [
   {
+    name: "Home",
+    link: "/",
+    submenu: [],
+  },
+  {
     name: "Services",
     submenu: [
       {
