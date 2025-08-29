@@ -17,6 +17,7 @@ import partnersData from "../data/partners-data";
 import BookCTA from "../components/BookCTA.astro";
 import GenericCTA from "../components/GenericCTA.astro";
 import rustyPilots from "../data/rusty-pliots-cta";
+import PageSummary from "../components/PageSummary.astro";
 
 const { data } = homePage;
 ---
@@ -32,11 +33,12 @@ const { data } = homePage;
   <!-- <BentoGrid /> -->
   <!-- <ProgramSwiper content={programsSwiper} /> -->
   <!-- <GenericCTA content={rustyPilots} /> -->
-  <ContentDivisor content={contentDivisor} />
+  <PageSummary content={data.pageSummary} />
   <ContentSplit content={data.whyUFT} />
   <ContentCTA content={data.maintenanceCTA} />
+  <ContentDivisor content={contentDivisor} />
   <!-- <Testimonials content={data.testimonials} /> -->
-  <!-- <BookCTA content={bookCTA} /> -->
+  <!-- <BookCTA content={flyWithUsCTA} /> -->
   <!-- <CTAColor content={flyWithUsCTA} /> -->
   <script src="../scripts/creativeSwiper.js"></script>
 </BaseLayout>

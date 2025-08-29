@@ -33,9 +33,17 @@ const homePage = {
         "/src/assets/fleet-uft-cirrus-sr22-g6-sarasota-flight-trainingIMG_8962.jpg",
       imageAlt:
         "Universal Aircraft Maintenance hangar with aircraft being serviced under clear Florida skies",
-      headerH1: `Trusted <br class="hidden lg:block" ><div class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">Aircraft Maintenance</div>`,
+      headerH1: `<br class="hidden lg:block" ><div class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">Trusted</div> Aircraft Maintenance`,
       paragraph: `Universal Aircraft Maintenance is your trusted partner for aircraft service, inspection, and repair in the Sarasota Bradenton Florida area.`,
       buttons: [],
+    },
+
+    pageSummary: {
+      title: `Aircraft<br> Maintenance`,
+      paragraphs: [
+        "Universal Aircraft Maintenance provides comprehensive aircraft care to keep your plane safe, reliable, and compliant with FAA regulations. From routine services like oil changes and tire replacements to full annual and 100-hour inspections, our experienced technicians handle it all with precision and care.",
+        "Our goal is to give aircraft owners peace of mind through dependable service, transparent communication, and competitive pricing. Whether you fly a Cessna, Piper, Cirrus, Beechcraft, or other aircraft, Universal Aircraft Maintenance is here to ensure your plane is always ready for the skies.",
+      ],
     },
 
     whyUFT: {
