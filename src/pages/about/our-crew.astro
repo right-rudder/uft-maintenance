@@ -6,7 +6,6 @@ import ourTeam from "../../data/our-team";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ContentDivisor from "../../components/ContentDivisor.astro";
 
-
 const { data } = ourTeam;
 ---
 
@@ -16,17 +15,17 @@ const { data } = ourTeam;
   keywords={data.pageKeywords}
 >
   <HeaderScreen content={data.header} />
-  <ContentDivisor content={data.staffGrid} />
+  <!-- <ContentDivisor content={data.staffGrid} /> -->
   <StaffGrid data={data.staffGrid} />
 
-  <ContentDivisor content={data.adminTeamGrid} />
-  <StaffGrid data={data.adminTeamGrid} />
-  
-  <ContentDivisor content={data.flightTeamGrid} />
-  <StaffGrid data={data.flightTeamGrid} />
-  
+  <!-- <ContentDivisor content={data.adminTeamGrid} /> -->
+  <!-- <StaffGrid data={data.adminTeamGrid} /> -->
+
+  <!-- <ContentDivisor content={data.flightTeamGrid} /> -->
+  <!-- <StaffGrid data={data.flightTeamGrid} /> -->
+
   <ContentDivisor content={data.maintenanceTeamGrid} />
   <StaffGrid data={data.maintenanceTeamGrid} />
-  
-  <CTAColor content={data.flyWithUsCTA} />
+
+  <!-- <CTAColor content={data.flyWithUsCTA} /> -->
 </BaseLayout>
