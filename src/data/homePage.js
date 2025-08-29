@@ -7,13 +7,14 @@ import {
   ADDRESS_LINE_1,
   ADDRESS_LINE_2,
   EMAIL_ADDRESS,
-  KEYWORDS
+  KEYWORDS,
 } from "../consts";
 
 const locationCity = "Sarasota";
 const locationStateShort = "FL";
 const locationStateLong = "Florida";
-const locationDescription = "A beautiful city with rich cultural heritage and access to coastal attractions.";
+const locationDescription =
+  "A beautiful city with rich cultural heritage and access to coastal attractions.";
 const locationCounty = "Sarasota County";
 const locationKeyPlace1 = "Siesta Key Beach";
 const locationKeyPlace2 = "Marie Selby Botanical Gardens";
@@ -22,93 +23,77 @@ const homePage = {
   data: {
     //SEO Header Stuff
     pageTitle: `${locationCity}, ${locationStateShort} Flight School for Pilot Training | ${COMPANY_NAME}`,
-    pageDescription:
-      `${SITE_DESCRIPTION}`,
-    pageKeywords:
-      `${KEYWORDS}, flight school ${locationCity} ${locationStateLong}, flight school ${locationCity} ${locationStateShort}, Private Pilot ${locationCity} ${locationStateLong}, Instrument Rating  ${locationCity} ${locationStateLong}, Commercial Pilot ${locationCity} ${locationStateLong}, Multi-Engine rating ${locationCity} ${locationStateLong}, Certified Flight Instructor ${locationCity} ${locationStateLong}, Sport Pilot ${locationCity} ${locationStateLong}, bachelor's in professional flight ${locationCity} ${locationStateLong}, bachelor's in aviation management ${locationCity} ${locationStateLong}, aircraft maintenance ${locationCity} ${locationStateLong}, discovery flight ${locationCity} ${locationStateLong}, intro flight ${locationCity} ${locationStateLong}, accelerated pilot training  ${locationCity} ${locationStateLong}, part time pilot training ${locationCity} ${locationStateLong}, ${COMPANY_NAME}, located at ${ADDRESS_LINE_1} ${ADDRESS_LINE_2}, ${PHONE_NUMBER}, ${COMPANY_NAME_CAPS}, ${COMPANY_NICKNAME}, ${EMAIL_ADDRESS}, how to become a pilot, flight school near, private pilot, discovery flight, introductory flight, instrument rating, commercial certificate, certified flight instructor, airline programs, how to become an airline pilot, flight school, pilot training, ${locationCity} flight school, personalized flight training, flexible flight programs, Private Pilot License training, Certified Flight Instructor (CFI) ${locationCity}, multi-engine training ${locationCity}, aviation school in ${locationStateLong}, Cessna 172 training, discovery flights ${locationCity}, pilot school near me, flight training with high pass rate, ${locationKeyPlace1}, ${locationKeyPlace2}, ${locationCounty}`,
+    pageDescription: `${SITE_DESCRIPTION}`,
+    pageKeywords: `${KEYWORDS}, flight school ${locationCity} ${locationStateLong}, flight school ${locationCity} ${locationStateShort}, Private Pilot ${locationCity} ${locationStateLong}, Instrument Rating  ${locationCity} ${locationStateLong}, Commercial Pilot ${locationCity} ${locationStateLong}, Multi-Engine rating ${locationCity} ${locationStateLong}, Certified Flight Instructor ${locationCity} ${locationStateLong}, Sport Pilot ${locationCity} ${locationStateLong}, bachelor's in professional flight ${locationCity} ${locationStateLong}, bachelor's in aviation management ${locationCity} ${locationStateLong}, aircraft maintenance ${locationCity} ${locationStateLong}, discovery flight ${locationCity} ${locationStateLong}, intro flight ${locationCity} ${locationStateLong}, accelerated pilot training  ${locationCity} ${locationStateLong}, part time pilot training ${locationCity} ${locationStateLong}, ${COMPANY_NAME}, located at ${ADDRESS_LINE_1} ${ADDRESS_LINE_2}, ${PHONE_NUMBER}, ${COMPANY_NAME_CAPS}, ${COMPANY_NICKNAME}, ${EMAIL_ADDRESS}, how to become a pilot, flight school near, private pilot, discovery flight, introductory flight, instrument rating, commercial certificate, certified flight instructor, airline programs, how to become an airline pilot, flight school, pilot training, ${locationCity} flight school, personalized flight training, flexible flight programs, Private Pilot License training, Certified Flight Instructor (CFI) ${locationCity}, multi-engine training ${locationCity}, aviation school in ${locationStateLong}, Cessna 172 training, discovery flights ${locationCity}, pilot school near me, flight training with high pass rate, ${locationKeyPlace1}, ${locationKeyPlace2}, ${locationCounty}`,
 
     //top header
     header: {
       stars: true,
       imagePath: "/src/assets/uft-2006-Cessna-Skyhawk-172s.webp",
       imageAlt:
-        "UFT's plane, a Cessna Skyhawk 172s 2006 on the runway viewed from the front with the co-pilot's side, under clear blue skies",
-      headerH1: `Are you ready to <br class="hidden lg:block" ><div class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">Become A Pilot?</div>`,
-      paragraph: `Universal Flight Training is your flight school to<br class="hidden lg:block" >become a pilot in the Sarasota Bradenton Florida area.`,
-      buttons: [
-        {
-          name: "Enroll Today",
-          link: "/enroll-now",
-          primary: false,
-        },
-        {
-          name: "Discovery Flight",
-          link: "/discovery-flight",
-          primary: false,
-        },
-      ],
+        "Universal Aircraft Maintenance hangar with aircraft being serviced under clear Florida skies",
+      headerH1: `Trusted <br class="hidden lg:block" ><div class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">Aircraft Maintenance</div>`,
+      paragraph: `Universal Aircraft Maintenance is your trusted partner for aircraft service, inspection, and repair in the Sarasota Bradenton Florida area.`,
+      buttons: [],
     },
 
     whyUFT: {
-      upperHeading: "You Can Become a Pilot",
-      heading: "The UFT EXPERIENCE",
+      upperHeading: "Comprehensive Aircraft Care",
+      heading: "The Universal Maintenance Experience",
       descriptions: [
-        "We are committed to your pilot training success.  We offer a diverse range of programs designed to skyrocket you in the world of aviation. Our experienced instructors and state-of-the-art fleet ensure you receive the best training possible.",
-        `When you choose to fly at ${COMPANY_NAME}, you are choosing to fly with the best of the best.  Come see why everyone in the ${locationCounty} region is checking out ${COMPANY_NICKNAME}.`,
+        "We are committed to keeping your aircraft safe, reliable, and compliant. From routine inspections to major repairs, our certified technicians provide the expertise and care your plane deserves.",
+        `When you choose ${COMPANY_NAME}, you’re choosing decades of combined maintenance experience trusted by pilots across ${locationCounty} and beyond.`,
       ],
       bullets: [
         {
-          title: "LOCAL AVIATION EXPERTISE",
+          title: "EXPERIENCED TECHNICIANS",
           descriptions: [
-          `Our experienced instructors bring years of expertise to flight training in the Sarasota and Bradenton area, ensuring top quality instruction.`,
+            `Our maintenance team brings over 30 years of combined experience working on Cessna, Piper, Cirrus, Beechcraft, and more.`,
           ],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
         {
-          title: "PERSONALIZED FLIGHT TRAINING",
+          title: "FULL-SERVICE MAINTENANCE",
           descriptions: [
-            `We offer customized, one-on-one training to help aviation students in Venice, Lakewood Ranch, ${locationCounty}, and surrounding areas achieve their goals.`,
+            `We offer oil changes, tire replacement, A/D compliance, annuals, 100-hour inspections, and more—all under one roof.`,
           ],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
         {
           title: "DEDICATED CUSTOMER SERVICE",
           descriptions: [
-            `Our team is committed to providing outstanding service to aviation enthusiasts throughout the Sarasota and the whole Central West ${locationStateLong} region.`,
+            `We believe maintenance should be clear and stress-free. Our team communicates every step, with transparent pricing and scheduling.`,
           ],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
         {
-          title: "COMPREHENSIVE FLIGHT LESSONS",
+          title: "CONVENIENT LOCATION",
           descriptions: [
-            `Our structured training programs offer a well organized learning experience, tailored for aspiring pilots in Palmetto, Osprey, ${locationCity} and nearby communities.`,
+            `Located at Sarasota–Bradenton International Airport, we provide easy access for aircraft owners across ${locationCity} and the greater ${locationStateLong} region.`,
           ],
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
       ],
-      imageLegend: `Jose Santos<br><small class="text-white font-normal text-sm">CEO of Universal Flight Training</small>`,
+      imageLegend: `Paul & Frank<br><small class="text-white font-normal text-sm">Lead Technicians at Universal Aircraft Maintenance</small>`,
       imagePath: "/src/assets/uft-jose-santos-ceo.jpg",
-      imageAlt:
-        "CEO for Universal Flight Training Jose Santos",
+      imageAlt: "Universal Aircraft Maintenance team working on an aircraft",
     },
 
-    quizCTA: {
-      upperHeading: "Take Our Quiz",
-      heading: "What's Your Ideal Path to Becoming a Pilot?",
+    maintenanceCTA: {
+      upperHeading: "Schedule Your Service",
+      heading: "Reliable Maintenance for Your Aircraft",
       descriptions: [
-        "Many aspiring pilots hesitate due to concerns about cost, time commitment, and career opportunities. It’s normal to feel uncertain when starting something new. At Universal Flight Training, we’re here to help you navigate your options and find the best path for your aviation journey.",
-
-        "You don’t need to make a big commitment upfront. Your journey can start with an affordable Discovery Flight, giving you a firsthand experience before deciding on full training. Whether you're looking to fly for fun, start a career, or explore aviation at your own pace, we provide flexible programs to fit your needs.",
-
-        `Not sure where to start? Take our "What's Your Ideal Path to Becoming a Pilot?" quiz! In just a few questions, you’ll gain insight into which training route suits your goals. Whether you dream of flying commercially, for personal adventure, or as an instructor, this quiz will guide you toward the right next step.`,
+        "Don’t wait until a small issue becomes a costly repair. Regular inspections and timely service keep your aircraft airworthy and give you peace of mind.",
+        "Whether you need routine maintenance, a pre-buy inspection, or emergency repair, Universal Aircraft Maintenance is here to keep you flying safely.",
+        `Contact our team today to discuss your maintenance needs and schedule your next service appointment.`,
       ],
       imageLegend: ``,
       imagePath: "/src/assets/uft-flight-school-right-for-me.jpg",
-      imageAlt: "Universal flight school student posing in front of plane",
+      imageAlt: "Technician inspecting aircraft engine inside hangar",
       buttons: [
         {
-          name: "Take the Quiz",
-          link: "/quiz",
+          name: "Contact us",
+          link: "/contact",
           primary: true,
         },
       ],
