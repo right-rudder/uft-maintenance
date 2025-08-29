@@ -10,10 +10,7 @@ const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
 import ChatWidget from "../components/ChatWidget.astro";
 import Banner from "../components/Banner.astro";
-import Form from "../components/Form.astro";
-import maintenancePage from "../data/maintenance-data.js";
 
-const { data } = maintenancePage;
 ---
 
 <!doctype html>
@@ -56,7 +53,6 @@ const { data } = maintenancePage;
     <main>
       <slot />
     </main>
-    <Form content={data.info} />
     <Footer />
     <ChatWidget />
   </body>

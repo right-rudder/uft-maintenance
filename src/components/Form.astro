@@ -1,13 +1,16 @@
 ---
 const { content } = Astro.props;
 
-const FORM_WEBHOOK_URL = content.form_url;
+const FORM_WEBHOOK_URL = import.meta.env.FORM_WEBHOOK_URL;
 
 const REDIRECT_URL = content.redirect_url;
 
 const CAMPAIGN = content.campaign || "contact_us";
 
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+
+const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
+
 ---
 
 <section class="relative isolate bg-white py-0">
@@ -242,7 +245,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   </div>
 </section>
 <script
-  define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, REDIRECT_URL, CAMPAIGN }}
+  define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, REDIRECT_URL, CAMPAIGN, ACCOUNT_ID }}
 >
   const checkbox = document.getElementById("agree-data-collection");
   const submitButton = document.getElementById("submit-button");
@@ -306,7 +309,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         email: formData.get("email")?.trim() || "",
         phone: formData.get("phone")?.trim() || "",
         campaign: CAMPAIGN,
-        account_random_id: "ac_fabson4e",
+        account_random_id: ACCOUNT_ID,
         metadata: metadata,
       };
 
