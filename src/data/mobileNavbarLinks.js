@@ -1,0 +1,34 @@
+export const mobileNavbarLinks = [
+  {
+    name: "Home",
+    link: "/",
+    submenu: [],
+  },
+  {
+    name: "Services",
+    submenu: [
+      {
+        name: "Maintenance",
+        link: "/services/maintenance",
+      },
+    ],
+  },
+  {
+    name: "About",
+    submenu: [
+      {
+        name: "Our Crew",
+        link: "/about/our-crew",
+      },
+      // {
+      //   name: "Blog",
+      //   link: "/blog",
+      // },
+    ],
+  },
+  {
+    name: "Contact Us",
+    link: "/contact",
+    submenu: [],
+  },
+];
