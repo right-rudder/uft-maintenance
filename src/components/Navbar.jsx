@@ -50,11 +50,11 @@ const Navbar = ({ pathname }) => {
           item.link + "/" === pathname ||
           item.subsubmenu?.some(
             (subItem) =>
-              subItem.link === pathname || subItem.link + "/" === pathname
-          )
+              subItem.link === pathname || subItem.link + "/" === pathname,
+          ),
       ) ||
       menuItem?.subsubmenu?.some(
-        (item) => item.link === pathname || item.link + "/" === pathname
+        (item) => item.link === pathname || item.link + "/" === pathname,
       ) ||
       menuItem.link === pathname ||
       menuItem.link + "/" === pathname;
@@ -75,7 +75,7 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav >
+    <nav>
       <div
         className={`${
           navBar || openMobile ? "bg-accent-600" : "bg-transparent"
@@ -92,7 +92,7 @@ const Navbar = ({ pathname }) => {
                 className="relative hover:brightness-110 duration-200 ease-in-out w-1/3"
               >
                 <img
-                  src="/uft-logo-new-bg-blue-removebg-preview.webp"
+                  src="/universal-aircraft-maintenance-logo.webp"
                   alt="Universal Flight Training Logo"
                   aria-label="Universal Flight Training Logo"
                   title="Universal Flight Training"
@@ -168,7 +168,7 @@ const Navbar = ({ pathname }) => {
                                             {subsubitem.name}
                                           </a>
                                         </li>
-                                      )
+                                      ),
                                     )}
                                   </ul>
                                 )}
@@ -260,7 +260,7 @@ const Navbar = ({ pathname }) => {
           className="z-30 relative flex justify-center items-center align-middle"
         >
           <img
-            src="/uft-logo-new-bg-blue-removebg-preview.webp"
+            src="/universal-aircraft-maintenance-logo.webp"
             alt="Universal Flight Training Logo"
             aria-label="Universal Flight Training Logo"
             title="Universal Flight Training"
@@ -364,13 +364,21 @@ const Navbar = ({ pathname }) => {
 
         <div className="p-5 px-10 font-normal flexfont-thinustify-center align-middle items-center gap-5 overflow-hidden">
           <div className="flex gap-3 items-center">
-            <a aria-labelledby="Call Us Now" title="Call Us Now"
+            <a
+              aria-labelledby="Call Us Now"
+              title="Call Us Now"
               href={`tel:${PHONE_NUMBER}`}
               className="border p-2 w-fit border-accent-200 rounded-full bg-black"
             >
               <FaPhone className="size-4 text-white" />
             </a>
-            <a aria-labelledby="Call Us Now" title="Call Us Now" href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+            <a
+              aria-labelledby="Call Us Now"
+              title="Call Us Now"
+              href={`tel:${PHONE_NUMBER}`}
+            >
+              {PHONE_NUMBER}
+            </a>
           </div>
 
           <div className="flex gap-3 mt-2 mb-16">
