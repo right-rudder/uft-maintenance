@@ -1,13 +1,13 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import Form from "../components/Form.astro";
 import contactPage from "../data/contact-data";
+import BaseLayoutAlt from "../layouts/BaseLayoutAlt.astro";
 
 const { data } = contactPage;
 ---
 
-<BaseLayout
+<BaseLayoutAlt
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
@@ -16,4 +16,4 @@ const { data } = contactPage;
   <Form content={data.info} />
 
   <script src="../scripts/emailValidation.js"></script>
-</BaseLayout>
+</BaseLayoutAlt>

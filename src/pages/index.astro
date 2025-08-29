@@ -19,16 +19,16 @@ import GenericCTA from "../components/GenericCTA.astro";
 import rustyPilots from "../data/rusty-pliots-cta";
 import PageSummary from "../components/PageSummary.astro";
 
-const { data } = homePage;
+const dataBody = homePage.data;
 ---
 
 <BaseLayout
-  siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
+  siteTitle={dataBody.pageTitle}
+  siteDescription={dataBody.pageDescription}
+  keywords={dataBody.pageKeywords}
 >
   <!-- HEADER -->
-  <HomeHeader content={data.header} />
+  <HomeHeader content={dataBody.header} />
   <!-- <Partners data={partnersData.data.partners} /> -->
   <!-- <BentoGrid /> -->
   <!-- <ProgramSwiper content={programsSwiper} /> -->

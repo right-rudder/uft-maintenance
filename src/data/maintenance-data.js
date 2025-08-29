@@ -26,7 +26,6 @@ const maintenancePage = {
     },
 
     info: {
-      form_url: import.meta.env.MAINTENANCE_WEBHOOK_URL,
       redirect_url: "/maintenance-confirmation",
       campaign: "maintenance",
       form_h: "Book a Service",

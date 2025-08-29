@@ -1,15 +1,18 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import maintenanceConfirmation from "../data/maintenance-confirmation-data";
+import BaseLayoutAlt from "../layouts/BaseLayoutAlt.astro";
 
 const { data } = maintenanceConfirmation;
 ---
 
-<BaseLayout
+<BaseLayoutAlt
   siteTitle={data.pageTitle}
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
-  <HeaderScreen content={data.header} />
-</BaseLayout>
+  <HeaderScreen
+    content={data.header}
+    styleClass="relative lg:mt-0 h-screen bg-accent-300/10 text-white flex flex-col items-center justify-center overflow-hidden"
+  />
+</BaseLayoutAlt>
