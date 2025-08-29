@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import type { ImageMetadata } from "astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import GridPrograms from "../../components/GridPrograms.astro";
+import programsSwiper from "../../data/programSwiper";
+import CTAColor from "../../components/CTAColor.astro";
+import flyWithUsCTA from "../../data/flyWithUsCTA.js";
+
+import coursesIndex from "../../data/coursesIndex.js";
+
+const { data } = coursesIndex;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+);
+
+---
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+  >
+  
+  <HeaderScreen content = {data.header} />
+  <GridPrograms content={programsSwiper} />
+  <CTAColor content={flyWithUsCTA} />
+
+  <script src="../../scripts/creativeSwiper.js"></script>
+</BaseLayout>
+

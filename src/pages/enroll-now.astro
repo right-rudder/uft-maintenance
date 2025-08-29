@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import EnrollForm from "../components/EnrollForm.astro"
+import enrollForm from "../data/enroll-form-data.js";
+
+const { data } = enrollForm;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+  <EnrollForm content={data.info} />
+
+  <script src="../scripts/emailValidation.js"></script>
+</BaseLayout>

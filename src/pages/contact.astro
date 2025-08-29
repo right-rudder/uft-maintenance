@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import Form from "../components/Form.astro";
+import contactPage from "../data/contact-data";
+
+const { data } = contactPage;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+  <Form content={data.info} />
+
+  <script src="../scripts/emailValidation.js"></script>
+</BaseLayout>

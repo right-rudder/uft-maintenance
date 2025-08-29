@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import QuizForm from "../../components/Quiz.astro";
+import quizPage from "../../data/quizData";
+
+const { data } = quizPage;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- <HeaderScreen content={data.header} /> -->
+  <HeaderScreen content={data.header} />
+  <QuizForm content={data} />
+
+  <script src="../../scripts/emailValidation.js"></script>
+</BaseLayout>

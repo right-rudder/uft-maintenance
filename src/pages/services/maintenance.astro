@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import ContentSplit from "../../components/ContentSplit.astro";
+import Form from "../../components/Form.astro";
+import maintenancePage from "../../data/maintenance-data.js";
+
+const { data } = maintenancePage;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+  <ContentSplit content={data.whyUFT} />
+  <Form content={data.info} />
+
+  <script src="../../scripts/emailValidation.js"></script>
+</BaseLayout>

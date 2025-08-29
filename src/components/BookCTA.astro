@@ -1,0 +1,46 @@
+---
+import ImageComp from "./ImageComp.astro";
+import BookModal from "./BookModal.jsx";
+const BOOK_WEBHOOK_URL = import.meta.env.VITE_BOOK_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+const { content } = Astro.props;
+---
+
+<section
+  class="flex flex-wrap justify-center py-12 lg:py-20 items-center align-middle bg-gray-100"
+>
+  <div
+    class="text-white w-full lg:w-1/2 text-center lg:text-left z-10 flex flex-col items-center lg:items-start gap-4 px-5 h-full justify-center"
+  >
+    <p
+      class="text-base mt-3 font-sans font-medium tracking-wide text-primary-700 max-w-xl"
+      set:html={content.upperHeading}
+    />
+    <h3
+      class="text-4xl md:text-5xl lg:text-6xl md:max-w-3xl lg:max-w-5xl font-bold tracking-normal text-muted-950"
+      set:html={content.headerH1}
+    />
+    <p
+      class="text-base lg:text-xl mt-3 font-sans font-semibold tracking-wide text-primary-800 max-w-xl"
+      set:html={content.paragraph}
+    />
+    <div
+      class="mt-6 flex flex-wrap justify-center lg:justify-start w-full align-middle items-center gap-6 z-10"
+    >
+      <BookModal
+        client:visible
+        webhookUrl={BOOK_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
+      />
+    </div>
+  </div>
+
+  <div class={`order-first lg:order-none w-full lg:w-1/5 relative py-6`}>
+    <ImageComp
+      imagePath={content.imagePath}
+      imageAlt={content.imageAlt}
+      styles="object-contain mx-auto hover:scale-105 drop-shadow-sm duration-300 h-1/2 w-auto"
+      quality={100}
+    />
+  </div>
+</section>

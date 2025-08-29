@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import catsPage from "../../data/cats-data.js";
+import ContentCTA from "../../components/ContentCTA.astro";
+
+const { data } = catsPage;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+  <ContentCTA content={data.pageContent} />
+
+</BaseLayout>
