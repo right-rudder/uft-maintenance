@@ -14,7 +14,6 @@ export async function getStaticPaths() {
 
 const service = Astro.props as CollectionEntry<"services">;
 
-// render() isn’t needed because we’re using vars (no markdown body)
 const data = service.data;
 
 const pageData = {
@@ -22,15 +21,17 @@ const pageData = {
   description: data.description,
   keywords: `${KEYWORDS}, aircraft repair, aircraft maintenance, ${data.title}`,
   header: {
-    headerH1: data.title,
-    paragraph: data.overview, // use your overview var here
-    imagePath: data.heroImage ?? "/src/assets/uft-plane-on-maintenance.jpg",
+    headerH1: `<br/><span class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">${data.title}</span>`,
+    paragraph: data.overview,
+    imagePath:
+      data.heroImage ?? "/src/assets/uft-maintenance-slug-services.webp",
     imageAlt: `${data.title} - Aircraft maintenance service`,
     buttons: [],
   },
 };
 
-const bgColorClass = "bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent";
+const bgColorClass =
+  "bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent";
 ---
 
 <BaseLayout
@@ -50,51 +51,54 @@ const bgColorClass = "bg-gradient-to-br from-accent-500 via-accent-300 to-accent
 
       <!-- What's Included -->
       <article class="rounded-2xl border bg-white p-6">
-        <h3 class={`font-bold ${bgColorClass}`}>What’s Included</h3>
-        <ul class="mt-3 text-primary-700 list-disc list-inside">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>What’s Included</h3>
+        <ul class="mt-3 text-primary-700 list-disc list-inside font-sans2">
           {data.included.map((item) => <li>{item}</li>)}
         </ul>
       </article>
 
       <!-- Recommended / When Needed -->
       <article class="rounded-2xl border bg-white p-6">
-        <h3 class={`font-bold ${bgColorClass}`}>Recommended</h3>
-        <p class="mt-3 text-gray-700">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>Recommended</h3>
+        <p class="mt-3 text-primary-700">
           {
             data.recommended ??
               "Contact our team for intervals specific to your airframe/engine."
           }
-          {
-            data.additional_options?.length ? (
-              <h3 class={`font-bold ${bgColorClass} mt-6`}>
-              Additional Options
-            </h3>
-            <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside">
+        </p>
+        <h3 class={`font-bold ${bgColorClass} mt-6 text-md`}>
+          Additional Options
+        </h3>
+        {
+          data.additional_options?.length ? (
+            <ul class="mt-3 list-disc list-inside font-sans2">
               {data.additional_options.map((opt) => (
-                <li>{opt}</li>
+                <li class="text-primary-700">{opt}</li>
               ))}
             </ul>
-
-            ) : null
-          }
-        </p>
+          ) : null
+        }
       </article>
 
       <!-- Benefits -->
       <article class="rounded-2xl border bg-white p-6">
-        <h3 class={`font-bold ${bgColorClass}`}>Benefits</h3>
-        <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>Benefits</h3>
+        <ul
+          class="mt-3 space-y-2 text-primary-700 list-disc list-inside font-sans2"
+        >
           {data.benefits.map((b) => <li>{b}</li>)}
         </ul>
       </article>
 
       <!-- Process -->
       <article class="lg:col-span-3 rounded-2xl border bg-white p-6">
-        <h3 class={`font-bold ${bgColorClass}`}>Process</h3>
-        <ol class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>Process</h3>
+        <ol
+          class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 list-inside font-sans2"
+        >
           {
             data.process.map((step) => (
-              <li class="rounded-xl border p-4 bg-gradient-to-br from-accent-600 to-accent-400 text-white">
+              <li class="rounded-xl border p-4 bg-gradient-to-br from-accent-600 to-accent-400 text-white font-semibold">
                 {step}
               </li>
             ))

@@ -1,7 +1,7 @@
 ---
 title: "Oil Change"
 description: "Protect your engine with FlyUFT’s quick-turn oil and filter service, complete with optional lab analysis."
-overview: "At FlyUFT, our oil change service is designed to safeguard your engine’s health. We use premium oils and filters, ensuring reliable performance for flights in diverse conditions—including the mountain environments we specialize in."
+overview: "At FlyUFT, our oil change service is designed to safeguard your engine’s health. We use premium oils and filters, ensuring reliable performance for flights in diverse conditions including the mountain environments we specialize in."
 included:
 - "Oil drained and replaced to manufacturer specification"
 - "Filter or screen replacement with inspection"
