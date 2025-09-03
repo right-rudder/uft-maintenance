@@ -2,22 +2,12 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import homePage from "../data/homePage";
 import HomeHeader from "../components/HomeHeader.astro";
-import ProgramSwiper from "../components/ProgramSwiper.astro";
-import BentoGrid from "../components/BentoGrid.astro";
 import ContentSplit from "../components/ContentSplit.astro";
-import CTAColor from "../components/CTAColor.astro";
-import Testimonials from "../components/Testimonials.astro";
 import ContentCTA from "../components/ContentCTA.astro";
-import flyWithUsCTA from "../data/flyWithUsCTA.js";
-import programsSwiper from "../data/programSwiper";
 import ContentDivisor from "../components/ContentDivisor.astro";
 import contentDivisor from "../data/content-divisor-data";
-import Partners from "../components/Partners.astro";
-import partnersData from "../data/partners-data";
-import BookCTA from "../components/BookCTA.astro";
-import GenericCTA from "../components/GenericCTA.astro";
-import rustyPilots from "../data/rusty-pliots-cta";
 import PageSummary from "../components/PageSummary.astro";
+import ServicesList from "../components/ServicesList.astro";
 
 const dataBody = homePage.data;
 ---
@@ -37,6 +27,7 @@ const dataBody = homePage.data;
   <ContentSplit content={dataBody.whyUFT} />
   <ContentCTA content={dataBody.maintenanceCTA} />
   <ContentDivisor content={contentDivisor} />
+  <ServicesList />
   <!-- <Testimonials content={data.testimonials} /> -->
   <!-- <BookCTA content={flyWithUsCTA} /> -->
   <!-- <CTAColor content={flyWithUsCTA} /> -->
