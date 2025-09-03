@@ -1,0 +1,128 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import { KEYWORDS } from "../../consts";
+
+const services = await getCollection("services");
+const sorted = services.sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+
+const pageData = {
+  title: `Aircraft Maintenance Services | FlyUFT`,
+  description:
+    "Explore FlyUFT’s full range of aircraft maintenance and inspection services, from oil changes to annual inspections and pre-buy evaluations.",
+  keywords: `${KEYWORDS}, aircraft maintenance, aircraft repair, inspections, oil change, annual inspection, pre-buy inspection`,
+  header: {
+    headerH1: "Our Maintenance & Inspection Services",
+    paragraph:
+      "FlyUFT provides tailored, safety-first aircraft maintenance and inspection services. From routine checks to major repairs, our team ensures your aircraft remains reliable, compliant, and ready for any mission.",
+    imagePath: "/src/assets/uft-maintenance-individual-services.webp",
+    imageAlt: "Aircraft maintenance services overview",
+    buttons: [],
+  },
+};
+---
+
+<style>
+  /* Keep the same flip mechanics as before */
+  .card {
+    perspective: 1200px;
+  }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: transform;
+  }
+  .card:hover .card-inner,
+  .card:focus-within .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    /* Prevent mirrored text on either side */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Front remains upright */
+  .card-front {
+    transform: rotateY(0deg);
+  }
+
+  /* Back is pre-rotated so it reads normally when the inner flips */
+  .card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* Make entire card clickable without affecting transform tree */
+  .stretched-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+</style>
+
+<BaseLayout
+  siteTitle={pageData.title}
+  siteDescription={pageData.description}
+  keywords={pageData.keywords}
+>
+  <HeaderScreen content={pageData.header} />
+
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        sorted.map(({ slug, data }) => (
+          <div class="relative card rounded-2xl border bg-white shadow-sm hover:shadow-lg focus-within:shadow-lg transition h-56 sm:h-64">
+            <a
+              href={`/services/${slug}/`}
+              class="stretched-link"
+              aria-label={`${data.title} details`}
+            />
+
+            <div class="card-inner">
+              {/* FRONT — title only */}
+              <div class="card-face card-front bg-white">
+                {data.heroImage && (
+                  <img
+                    src={data.heroImage}
+                    alt={data.title}
+                    class="absolute inset-0 h-full w-full object-cover opacity-30"
+                    loading="lazy"
+                  />
+                )}
+                <h2 class="relative text-xl font-semibold text-gray-900 text-center">
+                  {data.title}
+                </h2>
+              </div>
+
+              {/* BACK — bg-accent-500 & description only; text not inverted */}
+              <div class="card-face card-back">
+                <div class="absolute inset-0 rounded-2xl bg-accent-500" />
+                <div class="relative z-10 text-center px-4">
+                  <h3 class="text-lg font-semibold text-white">{data.title}</h3>
+                  <p class="mt-2 leading-relaxed text-white">
+                    {data.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

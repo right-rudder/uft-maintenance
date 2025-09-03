@@ -1,0 +1,110 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import { KEYWORDS } from "../../consts";
+
+export async function getStaticPaths() {
+  const services = await getCollection("services");
+  return services.map((entry) => ({
+    params: { slug: entry.slug },
+    props: entry,
+  }));
+}
+
+const service = Astro.props as CollectionEntry<"services">;
+
+const data = service.data;
+
+const pageData = {
+  title: `${data.title} | UFT Aircraft Maintenance`,
+  description: data.description,
+  keywords: `${KEYWORDS}, aircraft repair, aircraft maintenance, ${data.title}`,
+  header: {
+    headerH1: `<br/><span class="bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent">${data.title}</span>`,
+    paragraph: data.overview,
+    imagePath:
+      data.heroImage ?? "/src/assets/uft-maintenance-slug-services.webp",
+    imageAlt: `${data.title} - Aircraft maintenance service`,
+    buttons: [],
+  },
+};
+
+const bgColorClass =
+  "bg-gradient-to-br from-accent-500 via-accent-300 to-accent-400 bg-clip-text text-transparent";
+---
+
+<BaseLayout
+  siteTitle={pageData.title}
+  siteDescription={pageData.description}
+  keywords={pageData.keywords}
+>
+  <HeaderScreen content={pageData.header} />
+
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Overview -->
+      <article class="lg:col-span-3 rounded-2xl border bg-white p-6">
+        <h2 class={`text-lg font-bold ${bgColorClass}`}>Overview</h2>
+        <p class="mt-2 text-gray-900">{data.overview}</p>
+      </article>
+
+      <!-- What's Included -->
+      <article class="rounded-2xl border bg-white p-6">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>What’s Included</h3>
+        <ul class="mt-3 text-primary-700 list-disc list-inside font-sans2">
+          {data.included.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+
+      <!-- Recommended / When Needed -->
+      <article class="rounded-2xl border bg-white p-6">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>Recommended</h3>
+        <p class="mt-3 text-primary-700">
+          {
+            data.recommended ??
+              "Contact our team for intervals specific to your airframe/engine."
+          }
+        </p>
+        <h3 class={`font-bold ${bgColorClass} mt-6 text-md`}>
+          Additional Options
+        </h3>
+        {
+          data.additional_options?.length ? (
+            <ul class="mt-3 list-disc list-inside font-sans2">
+              {data.additional_options.map((opt) => (
+                <li class="text-primary-700">{opt}</li>
+              ))}
+            </ul>
+          ) : null
+        }
+      </article>
+
+      <!-- Benefits -->
+      <article class="rounded-2xl border bg-white p-6">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>Benefits</h3>
+        <ul
+          class="mt-3 space-y-2 text-primary-700 list-disc list-inside font-sans2"
+        >
+          {data.benefits.map((b) => <li>{b}</li>)}
+        </ul>
+      </article>
+
+      <!-- Process -->
+      <article class="lg:col-span-3 rounded-2xl border bg-white p-6">
+        <h3 class={`font-bold ${bgColorClass} text-md`}>Process</h3>
+        <ol
+          class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 list-inside font-sans2"
+        >
+          {
+            data.process.map((step) => (
+              <li class="rounded-xl border p-4 bg-gradient-to-br from-accent-600 to-accent-400 text-white font-semibold">
+                {step}
+              </li>
+            ))
+          }
+        </ol>
+      </article>
+    </div>
+  </section>
+</BaseLayout>
