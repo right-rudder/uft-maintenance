@@ -1,0 +1,79 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import { KEYWORDS } from "../../consts";
+
+const services = await getCollection("services");
+const sorted = services.sort((a, b) =>
+  a.data.title.localeCompare(b.data.title)
+);
+
+const pageData = {
+  title: `Aircraft Maintenance Services | FlyUFT`,
+  description:
+    "Explore FlyUFT’s full range of aircraft maintenance and inspection services, from oil changes to annual inspections and pre-buy evaluations.",
+  keywords: `${KEYWORDS}, aircraft maintenance, aircraft repair, inspections, oil change, annual inspection, pre-buy inspection`,
+  header: {
+    headerH1: "Our Maintenance & Inspection Services",
+    paragraph:
+      "FlyUFT provides tailored, safety-first aircraft maintenance and inspection services. From routine checks to major repairs, our team ensures your aircraft remains reliable, compliant, and ready for any mission.",
+    imagePath: "/src/assets/uft-plane-on-maintenance.jpg",
+    imageAlt: "Aircraft maintenance services overview",
+    buttons: [],
+  },
+};
+---
+
+<BaseLayout
+  siteTitle={pageData.title}
+  siteDescription={pageData.description}
+  keywords={pageData.keywords}
+>
+  <HeaderScreen content={pageData.header} />
+
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        sorted.map(({ slug, data }) => (
+          <a
+            href={`/services/${slug}/`}
+            class="group block border rounded-2xl p-6 bg-white hover:shadow-lg transition"
+          >
+            <h2 class="text-xl font-semibold text-accent-400 group-hover:text-accent-200">
+              {data.title}
+            </h2>
+            <p class="mt-2 text-sm text-gray-600">{data.description}</p>
+
+            <div class="mt-4">
+              <h3 class="text-sm font-medium text-accent-400">Overview</h3>
+              <p class="mt-1 text-sm text-gray-700 line-clamp-3">
+                {data.overview}
+              </p>
+            </div>
+
+            {data.recommended && (
+              <div class="mt-4">
+                <h3 class="text-sm font-medium text-accent-400-600">Recommended</h3>
+                <p class="mt-1 text-sm text-gray-700">{data.recommended}</p>
+              </div>
+            )}
+
+            {data.benefits && data.benefits.length > 0 && (
+              <div class="mt-4">
+                <h3 class="text-sm font-medium text-accent-400">
+                  Top Benefits
+                </h3>
+                <ul class="mt-1 space-y-1 text-sm text-gray-700 list-disc list-inside">
+                  {data.benefits.slice(0, 3).map((b) => (
+                    <li>{b}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

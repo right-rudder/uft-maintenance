@@ -33,7 +33,32 @@ const locationCollection = defineCollection({
   }),
 });
 
+const services = defineCollection({
+  type: "content",
+  schema: z.object({
+
+    title: z.string().min(2),
+    description: z.string().min(10),
+    overview: z.string().min(10),
+
+
+    included: z.array(z.string()).min(1),
+    benefits: z.array(z.string()).min(1),
+    additional_options: z.array(z.string()).default([]),
+    process: z.array(z.string()).min(1),
+
+    recommended: z.string().optional(),
+    heroImage: z.string().optional(),
+    updatedAt: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    featured: z.boolean().optional(),
+    priceRange: z.string().optional(),
+    leadTime: z.string().optional(),
+  }),
+});
+
 export const collections = {
   // blog: blogCollection,
   "aircraft-maintenance": locationCollection,
+  "services": services,
 };
