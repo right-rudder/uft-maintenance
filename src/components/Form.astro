@@ -10,24 +10,23 @@ const CAMPAIGN = content.campaign || "contact_us";
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
-
 ---
 
-<section class="relative isolate bg-white py-0">
+<section class="relative isolate bg-accent-500 py-0">
   <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
     <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
       <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-        <h2 class="text-5xl font-bold tracking-tight text-gray-900">
+        <h2 class="text-5xl font-bold tracking-tight text-white">
           {content.form_h}
         </h2>
-        <p class="mt-12 text-lg leading-8 text-gray-600">
+        <p class="mt-12 text-lg leading-8 text-gray-300">
           {content.form_p1}
         </p>
-        <p class="mt-2 text-lg leading-8 text-gray-600">
+        <p class="mt-2 text-lg leading-8 text-gray-300">
           {content.form_p2}
         </p>
         <dl
-          class="mt-10 space-y-4 text-base leading-7 text-gray-600 font-sans2"
+          class="mt-10 space-y-4 text-base leading-7 text-gray-300 font-sans2"
         >
           <div class="flex gap-x-4">
             <dt class="flex-none">
@@ -106,7 +105,7 @@ const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
       </div>
     </div>
     <div
-      class="bg-primary-500/20 mx-auto w-full h-full flex justify-center align-middle items-center p-6"
+      class="bg-accent-200/80 mx-auto w-full h-full flex justify-center align-middle items-center p-6"
     >
       <form id="contact-form" class="w-full max-w-xl font-sans2">
         <div class="">
@@ -236,7 +235,7 @@ const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
           form="contact-form"
           disabled
           type="submit"
-          class="mx-auto mt-8 btn-accent cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
+          class="mx-auto mt-8 btn-accent cursor-not-allowed hover:bg-gray-400 hover:text-white"
         >
           Send Message
         </button>
@@ -245,7 +244,13 @@ const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
   </div>
 </section>
 <script
-  define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY, REDIRECT_URL, CAMPAIGN, ACCOUNT_ID }}
+  define:vars={{
+    FORM_WEBHOOK_URL,
+    PORTAL_API_KEY,
+    REDIRECT_URL,
+    CAMPAIGN,
+    ACCOUNT_ID,
+  }}
 >
   const checkbox = document.getElementById("agree-data-collection");
   const submitButton = document.getElementById("submit-button");
@@ -256,14 +261,14 @@ const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
       submitButton.classList.remove(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400",
+        "hover:bg-gray-400"
       );
     } else {
       submitButton.disabled = true;
       submitButton.classList.add(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400",
+        "hover:bg-gray-400"
       );
     }
   });
