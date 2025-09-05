@@ -46,7 +46,7 @@ const contactPage = {
       campaign: "contact_us",
       form_h: "Connect with Us",
       form_p1:
-        "For questions about flight training, scheduling a discovery flight, or booking maintenance services, our team is here to help. At Universal Flight Training, we’re committed to providing you with the guidance and support you need at every stage of your aviation journey.",
+        "For questions about flight training, scheduling a discovery flight, or booking maintenance services, our team is here to help. At Universal Aircraft Maintenance, we’re committed to providing you with the guidance and support you need at every stage of your aviation journey.",
       form_p2:
         "Located at Sarasota Bradenton International Airport, we’re proud to serve both aspiring pilots and aircraft owners. Fill out the contact form, and one of our team members will be in touch soon to answer your questions or assist with your booking.",
       address_1: ADDRESS_LINE_1,

@@ -124,7 +124,7 @@ const homePage = {
           author: "Cori R.",
         },
         {
-          body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Flight Training. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
+          body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Aircraft Maintenance. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
           author: "Nick S.",
         },
         {

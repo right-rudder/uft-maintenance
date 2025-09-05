@@ -88,4 +88,4 @@ Flight schools usually operate 7 days a week, offering flexible schedules to acc
 - Flexible schedules
 - Opportunities for career advancement in aviation
 
-Ready to start your flight training journey? If you’re located near Sarasota Bradenton International Airport, check out [Universal Flight Training](https://flyuft.com/) and enroll as a new student today!
+Ready to start your flight training journey? If you’re located near Sarasota Bradenton International Airport, check out [Universal Aircraft Maintenance](https://flyuft.com/) and enroll as a new student today!

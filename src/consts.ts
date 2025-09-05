@@ -1,10 +1,10 @@
 // CHANGE Default title
 export const SITE_TITLE =
-  "Sarasota Flight School | Flight Training & Pilot Certification | Universal Flight Training";
+  "Sarasota Flight School | Flight Training & Pilot Certification | Universal Aircraft Maintenance";
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
-  "Universal Flight Training offers premier flight instruction at Sarasota Bradenton International Airport with a 98% checkride pass rate. From Private Pilot to CFI courses, our experienced instructors provide personalized training with modern aircraft. Begin your aviation journey with Florida's trusted flight school.";
+  "Universal Aircraft Maintenance offers premier flight instruction at Sarasota Bradenton International Airport with a 98% checkride pass rate. From Private Pilot to CFI courses, our experienced instructors provide personalized training with modern aircraft. Begin your aviation journey with Florida's trusted flight school.";
 
 //SEO tip -> focus on high-intent, specific keywords with location modifiers
 //Use a strategic mix of short-tail and long-tail keywords
@@ -55,8 +55,8 @@ export const COURSES = [
 ];
 
 // CHANGE client business info
-export const COMPANY_NAME = "Universal Flight Training";
-export const COMPANY_NAME_CAPS = "UNIVERSAL FLIGHT TRAINING";
+export const COMPANY_NAME = "Universal Aircraft Maintenance";
+export const COMPANY_NAME_CAPS = "Universal Aircraft Maintenance";
 export const COMPANY_NICKNAME = "UFT";
 export const PHONE_NUMBER = "(941) 300-0309";
 export const ADDRESS_LINE_1 = "8140 15th St E";
