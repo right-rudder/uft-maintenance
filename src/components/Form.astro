@@ -199,7 +199,9 @@ const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
           {
             content.textArea && (
               <div class="mb-4">
-                <label for="notes" class="block mb-0 font-semibold" />
+                <label for="notes" class="block mb-0 font-semibold">
+                  Message
+                </label>
                 <textarea
                   id="notes"
                   name="notes"
@@ -261,14 +263,14 @@ const ACCOUNT_ID = import.meta.env.ACCOUNT_ID;
       submitButton.classList.remove(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400"
+        "hover:bg-gray-400",
       );
     } else {
       submitButton.disabled = true;
       submitButton.classList.add(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400"
+        "hover:bg-gray-400",
       );
     }
   });
