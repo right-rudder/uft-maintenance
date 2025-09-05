@@ -2,6 +2,8 @@
 title: "Transponder"
 description: "Transponder and ADS-B testing per FAR 91.413 to verify reply accuracy, power, and performance."
 overview: "Your transponder and ADS-B are essential for controlled airspace. UFT Maintenance verifies performance to keep you visible and compliant."
+heroImage: "/src/assets/unsplash-airport-engine-repair-cyprien-da-silva-mnkUWNDxk6Q-unsplash.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Transponder reply accuracy check"
   - "ADS-B Out performance verification"

@@ -39,7 +39,7 @@ const homePage = {
     },
 
     pageSummary: {
-      title: `Aircraft<br> Maintenance`,
+      title: `Aircraft <br> Maintenance`,
       paragraphs: [
         "Universal Aircraft Maintenance provides comprehensive aircraft care to keep your plane safe, reliable, and compliant with FAA regulations. From routine services like oil changes and tire replacements to full annual and 100-hour inspections, our experienced technicians handle it all with precision and care.",
         "Our goal is to give aircraft owners peace of mind through dependable service, transparent communication, and competitive pricing. Whether you fly a Cessna, Piper, Cirrus, Beechcraft, or other aircraft, Universal Aircraft Maintenance is here to ensure your plane is always ready for the skies.",
@@ -124,7 +124,7 @@ const homePage = {
           author: "Cori R.",
         },
         {
-          body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Flight Training. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
+          body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Aircraft Maintenance. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
           author: "Nick S.",
         },
         {

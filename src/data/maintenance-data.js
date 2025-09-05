@@ -70,8 +70,8 @@ const maintenancePage = {
       upperHeading: "Your Aircraft in Expert Hands",
       heading: "THE UFT MAINTENANCE EXPERIENCE",
       descriptions: [
-        "At Universal Flight Training, we are committed to keeping your aircraft in peak condition with our comprehensive maintenance services. Our experienced staff provides reliable care for your plane, ensuring safety, performance, and longevity.",
-        "With decades of combined experience, our maintenance team is here to provide the highest quality service for pilots throughout the Sarasota region. Discover why Universal Flight Training is trusted for aircraft maintenance and care.",
+        "At Universal Aircraft Maintenance, we are committed to keeping your aircraft in peak condition with our comprehensive maintenance services. Our experienced staff provides reliable care for your plane, ensuring safety, performance, and longevity.",
+        "With decades of combined experience, our maintenance team is here to provide the highest quality service for pilots throughout the Sarasota region. Discover why Universal Aircraft Maintenance is trusted for aircraft maintenance and care.",
       ],
       bullets: [
         {
@@ -106,7 +106,7 @@ const maintenancePage = {
       imageLegend: `Paul and Frank<br><small class="text-white font-normal text-sm">Experienced Maintenance Staff</small>`,
       imagePath: "/src/assets/uft-maintenance-crew.jpg",
       imageAlt:
-        "Maintenance team members Paul and Frank from Universal Flight Training",
+        "Maintenance team members Paul and Frank from Universal Aircraft Maintenance",
     },
   },
 };

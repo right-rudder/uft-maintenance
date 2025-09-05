@@ -5,11 +5,11 @@ import type { ImageMetadata } from "astro";
 const { content } = Astro.props;
 const styles = Astro.props.styleClass || null;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 if (!images[content.imagePath]) {
   throw new Error(
-    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
   );
 }
 ---
@@ -35,11 +35,11 @@ if (!images[content.imagePath]) {
     class="text-white mt-20 lg:mt-0 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center pb-4"
   >
     <h1
-      class="text-5xl uppercase italic md:text-6xl lg:text-7xl drop-shadow-lg xl:text-8xl text-center font-black tracking-wide text-gray-100"
+      class="text-3xl px-4 uppercase italic md:text-6xl lg:text-7xl drop-shadow-lg xl:text-8xl text-center font-black lg:tracking-wide text-gray-100 text-pretty"
       set:html={content.headerH1}
     />
     <h2
-      class="text-sm lg:text-xl mt-3 font-semibold tracking-wide text-center max-w-4xl italic"
+      class="text-xs lg:text-xl mt-3 tracking-wide text-center max-w-4xl italic text-pretty px-4"
       set:html={content.paragraph}
     />
     <div

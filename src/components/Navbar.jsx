@@ -93,9 +93,9 @@ const Navbar = ({ pathname }) => {
               >
                 <img
                   src="/universal-aircraft-maintenance-logo.webp"
-                  alt="Universal Flight Training Logo"
-                  aria-label="Universal Flight Training Logo"
-                  title="Universal Flight Training"
+                  alt="Universal Aircraft Maintenance Logo"
+                  aria-label="Universal Aircraft Maintenance Logo"
+                  title="Universal Aircraft Maintenance"
                   loading="lazy"
                   className={`${navBar || openMobile ? "h-20 lg:h-24" : "h-20 lg:h-28"} object-contain duration-500`}
                 />
@@ -261,9 +261,9 @@ const Navbar = ({ pathname }) => {
         >
           <img
             src="/universal-aircraft-maintenance-logo.webp"
-            alt="Universal Flight Training Logo"
-            aria-label="Universal Flight Training Logo"
-            title="Universal Flight Training"
+            alt="Universal Aircraft Maintenance Logo"
+            aria-label="Universal Aircraft Maintenance Logo"
+            title="Universal Aircraft Maintenance"
             className="object-contain h-24 w-auto drop-shadow-sm"
           />
         </a>

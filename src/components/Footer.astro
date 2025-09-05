@@ -42,7 +42,7 @@ const { pathname } = Astro.url;
         >
           <Image
             src={logo}
-            alt="Universal Flight Training Logo"
+            alt="Universal Aircraft Maintenance Logo"
             class="object-contain h-36 w-auto px-5 lg:px-0 drop-shadow-lg"
             widths={[240, 540, 720, 1080, 1440, 1980]}
             sizes={`(max-width: 240px) 240px, (max-width: 540px) 540px, (max-width: 720px) 720px, (max-width: 1080px) 1080px, (max-width: 1440px) 1440px, 1920px`}
@@ -80,13 +80,13 @@ const { pathname } = Astro.url;
               <p class="font-bold text-xl font-sans lg:text-md tracking-wide text-accent-200">
                 {column.title}
               </p>
-              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm">
+              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm text-center">
                 {column.links.map((link) => (
                   <li>
                     <a
                       href={link.link}
                       target={link.target}
-                      class="transition-colors duration-300 text-white hover:text-accent-100"
+                      class="transition-colors duration-300 text-white hover:text-accent-100 text-xs lg:text-sm"
                     >
                       {link.name}
                     </a>
