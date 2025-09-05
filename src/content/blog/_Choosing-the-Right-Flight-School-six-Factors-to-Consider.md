@@ -73,4 +73,4 @@ Part 61 flight schools offer a personalized training experience. Unlike Part 141
 
 ## Conclusion
 
-Choosing the right flight school is a critical decision that affects your entire aviation career. Universal Aircraft Maintenance stands out by meeting and exceeding key criteria, offering flexible and comprehensive training under Part 61 regulations. For more information on how UFT can help you achieve your aviation goals, visit their [website](https://flyuft.com) and take the first step towards your pilot career today.
+Choosing the right flight school is a critical decision that affects your entire aviation career. Universal Aircraft Maintenance stands out by meeting and exceeding key criteria, offering flexible and comprehensive training under Part 61 regulations. For more information on how UFT can help you achieve your aviation goals, visit their [website](https://repairuam.com) and take the first step towards your pilot career today.

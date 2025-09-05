@@ -6,7 +6,7 @@ const terms = {
       {
         heading: "Terms",
         paragraphs: [
-          "By accessing this website, accessible from https://www.flyuft.com/, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for compliance with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trademark law.",
+          "By accessing this website, accessible from https://www.repairuam.com/, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for compliance with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trademark law.",
         ],
       },
       {

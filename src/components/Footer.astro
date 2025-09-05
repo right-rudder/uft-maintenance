@@ -80,13 +80,13 @@ const { pathname } = Astro.url;
               <p class="font-bold text-xl font-sans lg:text-md tracking-wide text-accent-200">
                 {column.title}
               </p>
-              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm">
+              <ul class="mt-2 space-y-2 text-lg font-sans2 lg:text-sm text-center">
                 {column.links.map((link) => (
                   <li>
                     <a
                       href={link.link}
                       target={link.target}
-                      class="transition-colors duration-300 text-white hover:text-accent-100"
+                      class="transition-colors duration-300 text-white hover:text-accent-100 text-xs lg:text-sm"
                     >
                       {link.name}
                     </a>
