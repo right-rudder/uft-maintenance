@@ -2,6 +2,8 @@
 title: "Pre-buy Inspections"
 description: "Objective aircraft evaluations with records audit, borescope, compression, and AD/SB status."
 overview: "Make an informed purchase with UFT Maintenance’s unbiased evaluation. We surface airworthiness risks and true cost-of-ownership factors before you commit."
+heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Records audit: AD/SB status, 337s, STCs, weight & balance"
   - "Engine health: borescope, compression, oil/filter inspection"

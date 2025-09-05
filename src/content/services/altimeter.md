@@ -2,6 +2,8 @@
 title: "Altimeter"
 description: "IFR-required altimeter and static system testing per FAR 91.411 with calibrated equipment."
 overview: "UFT Maintenance performs biennial altimeter, static system, and pressure altitude tests, ensuring accurate readings for IFR—critical in mountainous terrain."
+heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Static system integrity (leak) test"
   - "Altimeter calibration checks across ranges"

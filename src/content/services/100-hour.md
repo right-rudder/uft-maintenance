@@ -2,6 +2,8 @@
 title: "100 Hour"
 description: "Fast, compliant 100-hour inspections for training and rental fleets with minimized downtime."
 overview: "UFT Maintenance coordinates your 100-hour with annuals when practical, aligning tasks to reduce cost and downtime—ideal for busy flight schools and rental operators."
+heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Airframe and engine inspection per maintenance manual"
   - "Compression test and spark plug service"

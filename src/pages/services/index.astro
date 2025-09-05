@@ -3,10 +3,11 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HeaderScreen from "../../components/HeaderScreen.astro";
 import { KEYWORDS } from "../../consts";
+import ImageComp from "../../components/ImageComp.astro";
 
 const services = await getCollection("services");
 const sorted = services.sort((a, b) =>
-  a.data.title.localeCompare(b.data.title)
+  a.data.title.localeCompare(b.data.title),
 );
 
 const pageData = {
@@ -97,10 +98,12 @@ const pageData = {
               {/* FRONT — title only */}
               <div class="card-face card-front bg-white">
                 {data.heroImage && (
-                  <img
-                    src={data.heroImage}
-                    alt={data.title}
-                    class="absolute inset-0 h-full w-full object-cover opacity-30"
+                  <ImageComp
+                    imagePath={data.heroImage}
+                    imageAlt={data.imageAlt}
+                    width={400}
+                    height={300}
+                    styles="absolute inset-0 h-full w-full object-cover opacity-30"
                     loading="lazy"
                   />
                 )}

@@ -79,13 +79,15 @@ const header = {
     {
       services.map((service, _index) => (
         <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-48 hover:ring-1 hover:ring-primary-300 duration-200">
-          <ImageComp
-            imagePath="/src/assets/uft-plane-on-maintenance.jpg"
-            imageAlt="Aircraft motor maintenance"
-            width={400}
-            height={300}
-            styles="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
-          />
+          {service.data.heroImage && (
+            <ImageComp
+              imagePath={service.data.heroImage}
+              imageAlt={service.data.imageAlt}
+              width={400}
+              height={300}
+              styles="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
+            />
+          )}
           <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-950 to-primary-950/20 group-hover:bg-primary-800/60 duration-200" />
           <div class="absolute inset-0 -z-10 rounded-md ring-1 ring-inset ring-gray-900/10" />
 

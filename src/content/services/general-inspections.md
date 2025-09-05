@@ -2,6 +2,8 @@
 title: "General Inspections"
 description: "Custom condition checks tailored to your mission, from pre-trip to post-event inspections."
 overview: "When you need expert eyes outside scheduled maintenance, UFT Maintenance tailors inspection scope—perfect for ferry flights, post-maintenance checks, or peace of mind."
+heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Visual and functional checks of requested systems"
   - "Findings report with photos where helpful"

@@ -2,6 +2,8 @@
 title: "Tire Replacement"
 description: "Same-day tire and tube replacement with bearing service and brake inspection."
 overview: "UFT Maintenance keeps your landings smooth with quality GA tires and professional wheel/brake service—ideal for frequent operations on mixed runway surfaces."
+heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Wheel disassembly and cleaning"
   - "Tire and tube replacement, inflation, and seating"
