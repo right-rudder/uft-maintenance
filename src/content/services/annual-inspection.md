@@ -2,7 +2,7 @@
 title: "Annual Inspection"
 description: "Comprehensive annual inspections at UFT Maintenance keep your aircraft safe, compliant, and ready for flight."
 overview: "UFT Maintenance’s IA-supervised annual covers airframe, powerplant, propeller, and avionics. We specialize in mountain flying readiness and provide a transparent discrepancy report with prioritized corrective actions."
-heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+heroImage: "/src/assets/unsplash-plane-engine-partialy-open-william-ducret-seh_SVXOGqM-unsplash.jpg"
 imageAlt: "UFT Maintenance"
 included:
   - "Inspection per FAR Part 43 Appendix D"

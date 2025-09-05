@@ -2,7 +2,7 @@
 title: "A/D Compliance"
 description: "Execute and document AD compliance tasks with proper references and logbook entries."
 overview: "From one-time inspections to recurring tasks and terminating actions, UFT Maintenance performs and documents AD compliance to standard."
-heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+heroImage: "/src/assets/unsplash-person-checking-aircraft-wings-pandu-agus-wismoyo-7OgQ-Ze7BXQ-unsplash.jpg"
 imageAlt: "UFT Maintenance"
 included:
   - "Specified inspection/test procedure"

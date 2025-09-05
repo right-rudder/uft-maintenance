@@ -2,7 +2,7 @@
 title: "Airworthiness Directives"
 description: "Research, applicability review, and corrective actions to keep your aircraft AD-compliant."
 overview: "UFT Maintenance audits current and historical ADs across airframe, engine, propeller, and appliances, then plans required actions to maintain compliance."
-heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+heroImage: "/src/assets/unsplash-mechanics-working-old-green-plane-phyllis-lilienthal-NO2HySeuNqE-unsplash.jpg"
 imageAlt: "UFT Maintenance"
 included:
   - "AD applicability and status research"

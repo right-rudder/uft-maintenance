@@ -2,7 +2,7 @@
 title: "Major Alteration or Repair (Form 337)"
 description: "Engineering-supported major repairs and alterations with FAA Form 337 and approved data."
 overview: "UFT Maintenance coordinates the entire Form 337 process—from data path selection (STC/field approval/DER) to conformity inspections—ensuring compliant outcomes."
-heroImage: "/src/assets/uft-piper-multi-engine-aircraft.jpg"
+heroImage: "/src/assets/uft-plane-on-maintenance.jpg"
 imageAlt: "UFT Maintenance"
 included:
   - "Engineering data coordination and review"
