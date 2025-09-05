@@ -12,29 +12,24 @@ const contactPage = {
   data: {
     //SEO Header Stuff
     pageTitle: `Contact us | ${COMPANY_NAME}`,
-    pageDescription: `Get in touch with ${COMPANY_NAME} for all your flight training, aircraft maintenance, and aviation service needs. Our team is ready to assist you with any questions and help guide you on your aviation journey. Contact us today to learn more or to book a service!`,
-    pageKeywords: `${KEYWORDS}, contact ${COMPANY_NAME}, flight training inquiries, aviation services, aircraft maintenance booking, Sarasota aviation support, contact flight school, Sarasota aviation maintenance`,
+    pageDescription: `Get in touch with ${COMPANY_NAME} for all your aircraft maintenance, inspections, and aviation service needs. Our experienced team is ready to assist you with scheduling, questions, and support to keep your aircraft safe and reliable. Contact us today to book your next service!`,
+    pageKeywords: `${KEYWORDS}, contact ${COMPANY_NAME}, aircraft maintenance Sarasota, aviation inspections SRQ, schedule aircraft service, Sarasota aircraft repair, aviation maintenance support`,
 
     header: {
       stars: true,
       imagePath: "/src/assets/uft-logo-new-bg-gradient-blue.png",
       imageAlt: `${COMPANY_NAME} logo`,
       headerH1: `<div class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">Contact</div><div class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">${COMPANY_NAME}</div>`,
-      paragraph: `Whether you’re ready to start your flight training, schedule maintenance for your aircraft, or simply have questions about our programs, the team at ${COMPANY_NAME} is here to assist you.`,
+      paragraph: `Whether you need to schedule routine maintenance, arrange an inspection, or have questions about our services, the team at ${COMPANY_NAME} is here to assist you with professionalism and care.`,
       buttons: [
-        {
-          name: "Enroll Form",
-          link: "/enroll-now",
-          primary: false,
-        },
-        {
-          name: "Discovery Flight",
-          link: "/discovery-flight",
-          primary: false,
-        },
         {
           name: "Maintenance Form",
           link: "/services/maintenance",
+          primary: true,
+        },
+        {
+          name: "General Contact",
+          link: "/contact",
           primary: false,
         },
       ],
@@ -44,11 +39,11 @@ const contactPage = {
       form_url: import.meta.env.CONTACT_WEBHOOK_URL,
       redirect_url: "/enroll-confirmation",
       campaign: "contact_us",
-      form_h: "Connect with Us",
+      form_h: "Connect with Our Maintenance Team",
       form_p1:
-        "For questions about flight training, scheduling a discovery flight, or booking maintenance services, our team is here to help. At Universal Aircraft Maintenance, we’re committed to providing you with the guidance and support you need at every stage of your aviation journey.",
+        "For questions about inspections, routine servicing, or specialized aircraft repairs, our experienced maintenance team is here to help. At Universal Aircraft Maintenance, safety and reliability come first.",
       form_p2:
-        "Located at Sarasota Bradenton International Airport, we’re proud to serve both aspiring pilots and aircraft owners. Fill out the contact form, and one of our team members will be in touch soon to answer your questions or assist with your booking.",
+        "Located at Sarasota Bradenton International Airport, we proudly serve aircraft owners, pilots, and operators throughout Florida. Fill out the contact form, and one of our technicians will be in touch soon to assist with your needs.",
       address_1: ADDRESS_LINE_1,
       address_2: ADDRESS_LINE_2,
       gmaps: GMAPS,
@@ -80,9 +75,10 @@ const contactPage = {
       //   },
       // ],
       textArea:
-        "Say hello! Our team will be happy to answer any questions you might have about our programs",
+        "Tell us about your aircraft maintenance needs and our team will be happy to assist.",
       checkboxText: `I agree to <a href="/terms-of-service" target="_blank" class="font-semibold hover:underline">terms</a> & <a href="/privacy-policy" target="_blank" class="font-semibold hover:underline">conditions</a> provided by the company. By providing my phone number, I agree to receive text messages from the business.`,
     },
   },
 };
+
 export default contactPage;
