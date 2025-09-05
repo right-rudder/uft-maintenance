@@ -39,7 +39,7 @@ const homePage = {
     },
 
     pageSummary: {
-      title: `Aircraft<br> Maintenance`,
+      title: `Aircraft <br> Maintenance`,
       paragraphs: [
         "Universal Aircraft Maintenance provides comprehensive aircraft care to keep your plane safe, reliable, and compliant with FAA regulations. From routine services like oil changes and tire replacements to full annual and 100-hour inspections, our experienced technicians handle it all with precision and care.",
         "Our goal is to give aircraft owners peace of mind through dependable service, transparent communication, and competitive pricing. Whether you fly a Cessna, Piper, Cirrus, Beechcraft, or other aircraft, Universal Aircraft Maintenance is here to ensure your plane is always ready for the skies.",
