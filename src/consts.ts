@@ -1,17 +1,11 @@
-// CHANGE Default title
 export const SITE_TITLE =
-  "Sarasota Flight School | Flight Training & Pilot Certification | Universal Aircraft Maintenance";
+  "Sarasota Aircraft Maintenance | Universal Aircraft Maintenance Services";
 
-// CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
-  "Universal Aircraft Maintenance offers premier flight instruction at Sarasota Bradenton International Airport with a 98% checkride pass rate. From Private Pilot to CFI courses, our experienced instructors provide personalized training with modern aircraft. Begin your aviation journey with Florida's trusted flight school.";
+  "Universal Aircraft Maintenance provides trusted aircraft inspection, repair, and servicing at Sarasota Bradenton International Airport. Our skilled technicians ensure safety, reliability, and performance through comprehensive maintenance solutions, from routine checks to specialized repairs.";
 
-//SEO tip -> focus on high-intent, specific keywords with location modifiers
-//Use a strategic mix of short-tail and long-tail keywords
-//Focus on user search intent and conversion-focused terms
-// CHANGE default keywords -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const KEYWORDS =
-  "flight school Sarasota, pilot training Florida, discovery flight Sarasota, how to become a pilot, Private Pilot License Sarasota FL, flight instructor certification, instrument rating training, commercial pilot courses Florida, flight lessons near me, Cessna 172 flight training, Sarasota Bradenton airport flight school, best aviation school Florida, pilot license cost, discovery flights SRQ, affordable flight training Sarasota";
+  "aircraft maintenance Sarasota, airplane repair Florida, aviation maintenance SRQ, aircraft inspection Sarasota Bradenton, annual inspection aircraft Florida, 100 hour inspection Sarasota, aviation mechanics SRQ, reliable aircraft service Sarasota, FAA certified aircraft maintenance Florida, aircraft repair shop Sarasota, general aviation maintenance Florida, Cessna maintenance SRQ, Piper aircraft service Sarasota, aviation safety inspections Florida, aircraft maintenance near me";
 
 export const LOCATIONS = [
   {
