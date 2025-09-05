@@ -22,14 +22,14 @@ const contactPage = {
       headerH1: `<div class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">Contact</div><div class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">${COMPANY_NAME}</div>`,
       paragraph: `Whether you need to schedule routine maintenance, arrange an inspection, or have questions about our services, the team at ${COMPANY_NAME} is here to assist you with professionalism and care.`,
       buttons: [
+        // {
+        //   name: "Maintenance Form",
+        //   link: "/services/maintenance",
+        //   primary: false,
+        // },
         {
-          name: "Maintenance Form",
-          link: "/services/maintenance",
-          primary: true,
-        },
-        {
-          name: "General Contact",
-          link: "/contact",
+          name: "Contact Us",
+          link: "#contact",
           primary: false,
         },
       ],
