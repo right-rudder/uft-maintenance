@@ -9,7 +9,6 @@ import CTAColor from "../../components/CTAColor.astro";
 import Testimonials from "../../components/Testimonials.astro";
 import ContentCTA from "../../components/ContentCTA.astro";
 import flyWithUsCTA from "../../data/flyWithUsCTA.js";
-import programsSwiper from "../../data/programSwiper";
 import ContentDivisor from "../../components/ContentDivisor.astro";
 import contentDivisor from "../../data/content-divisor-data";
 import Partners from "../../components/Partners.astro";
@@ -40,7 +39,7 @@ export async function getStaticPaths() {
     };
   });
 }
-type Props = CollectionEntry<"location">;
+type Props = CollectionEntry<"aircraft-maintenance">;
 const location = Astro.props;
 const locationCity = location.data.city || "your area";
 const locationStateShort = location.data.stateShort || "your state";
@@ -228,7 +227,7 @@ const data = {
 
   <BentoGrid />
 
-  <ProgramSwiper content={programsSwiper} />
+  <!-- <ProgramSwiper content={programsSwiper} /> -->
   <ContentDivisor content={contentDivisor} />
   <Testimonials content={data.testimonials} />
   <CTAColor content={flyWithUsCTA} />
