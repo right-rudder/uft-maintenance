@@ -39,7 +39,7 @@ const homePage = {
     },
 
     pageSummary: {
-      title: `Aircraft<br> Maintenance`,
+      title: `Aircraft <br> Maintenance`,
       paragraphs: [
         "Universal Aircraft Maintenance provides comprehensive aircraft care to keep your plane safe, reliable, and compliant with FAA regulations. From routine services like oil changes and tire replacements to full annual and 100-hour inspections, our experienced technicians handle it all with precision and care.",
         "Our goal is to give aircraft owners peace of mind through dependable service, transparent communication, and competitive pricing. Whether you fly a Cessna, Piper, Cirrus, Beechcraft, or other aircraft, Universal Aircraft Maintenance is here to ensure your plane is always ready for the skies.",
@@ -83,7 +83,7 @@ const homePage = {
           icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
         },
       ],
-      imageLegend: `Paul & Frank<br><small class="text-white font-normal text-sm">Lead Technicians at Universal Aircraft Maintenance</small>`,
+      imageLegend: `Paul <br><small class="text-white font-normal text-sm">Lead Technician at Universal Aircraft Maintenance</small>`,
       imagePath: "/src/assets/uft-Paul-Hopkins-Mechanic.jpg",
       imageAlt: "Universal Aircraft Maintenance team working on an aircraft",
     },
@@ -124,7 +124,7 @@ const homePage = {
           author: "Cori R.",
         },
         {
-          body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Flight Training. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
+          body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Aircraft Maintenance. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
           author: "Nick S.",
         },
         {

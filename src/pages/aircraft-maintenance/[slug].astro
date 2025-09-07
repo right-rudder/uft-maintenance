@@ -9,7 +9,6 @@ import CTAColor from "../../components/CTAColor.astro";
 import Testimonials from "../../components/Testimonials.astro";
 import ContentCTA from "../../components/ContentCTA.astro";
 import flyWithUsCTA from "../../data/flyWithUsCTA.js";
-import programsSwiper from "../../data/programSwiper";
 import ContentDivisor from "../../components/ContentDivisor.astro";
 import contentDivisor from "../../data/content-divisor-data";
 import Partners from "../../components/Partners.astro";
@@ -40,7 +39,7 @@ export async function getStaticPaths() {
     };
   });
 }
-type Props = CollectionEntry<"location">;
+type Props = CollectionEntry<"aircraft-maintenance">;
 const location = Astro.props;
 const locationCity = location.data.city || "your area";
 const locationStateShort = location.data.stateShort || "your state";
@@ -83,7 +82,7 @@ const data = {
     headerH1:
       headerH1 ||
       `Train to become a pilot near ${locationCity}, ${locationStateShort}`,
-    paragraph: `Universal Flight Training offers personalized pilot training in ${locationCity}, located in scenic ${locationStateLong}. ${locationDescription}`,
+    paragraph: `Universal Aircraft Maintenance offers personalized pilot training in ${locationCity}, located in scenic ${locationStateLong}. ${locationDescription}`,
     buttons: [
       {
         name: "Enroll Today",
@@ -135,10 +134,10 @@ const data = {
         icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z",
       },
     ],
-    imageLegend: `Universal Flight Training pilot student holding a Private Pilot Certificate`,
+    imageLegend: `Universal Aircraft Maintenance pilot student holding a Private Pilot Certificate`,
     imagePath: "/src/assets/uft-student-holding-ppc.jpg",
     imageAlt:
-      "Universal Flight Training pilot student holding a Private Pilot Certificate",
+      "Universal Aircraft Maintenance pilot student holding a Private Pilot Certificate",
     buttons: [
       {
         name: "Book a Discovery Flight",
@@ -152,9 +151,9 @@ const data = {
     upperHeading: "Take Our Quiz",
     heading: "Is Flight School Right For Me?",
     descriptions: [
-      "Many people think that becoming a pilot is out of reach due to concerns about cost, time commitment, and safety. These doubts often come from online research or general uncertainty. We understand these concerns and invite you to connect with a team member at Universal Flight Training to discuss any questions that may have come up during your research.",
+      "Many people think that becoming a pilot is out of reach due to concerns about cost, time commitment, and safety. These doubts often come from online research or general uncertainty. We understand these concerns and invite you to connect with a team member at Universal Aircraft Maintenance to discuss any questions that may have come up during your research.",
 
-      "At Universal Flight Training, you dont need to make a big financial commitment upfront. Your journey can start with an affordable discovery flight, which costs just a few hundred dollars. While pursuing your pilots license does require a significant time investment, its a life-changing achievement with long lasting rewards. Our top priority at UFT is safety, ensuring that your path to becoming a pilot is both safe and fun.",
+      "At Universal Aircraft Maintenance, you dont need to make a big financial commitment upfront. Your journey can start with an affordable discovery flight, which costs just a few hundred dollars. While pursuing your pilots license does require a significant time investment, its a life-changing achievement with long lasting rewards. Our top priority at UFT is safety, ensuring that your path to becoming a pilot is both safe and fun.",
 
       `Wondering if a pilot's life is the right fit for you? Take our "Is Flying Right for Me?" quiz to find out. Designed to help you explore your interests, this quiz will guide you in deciding if the skies over Sarasota, Bradenton, or Lakewood Ranch are where you belong. Click below to start your aviation journey and see if flight training in the Sarasota area is your next adventure.`,
     ],
@@ -186,7 +185,7 @@ const data = {
         author: "Cori R.",
       },
       {
-        body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Flight Training. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
+        body: "Excellent place to train! Whether it is flying or taking a written knowledge exam, I highly recommend Universal Aircraft Maintenance. The staff cares about your success. During my IRA knowledge exam, there was an unexpected county-wide internet outage. Jose allowed me to wait at the location until the internet was working again, and did everything in his power to help me take the test the same day it was scheduled. True class all around!",
         author: "Nick S.",
       },
       {
@@ -228,7 +227,7 @@ const data = {
 
   <BentoGrid />
 
-  <ProgramSwiper content={programsSwiper} />
+  <!-- <ProgramSwiper content={programsSwiper} /> -->
   <ContentDivisor content={contentDivisor} />
   <Testimonials content={data.testimonials} />
   <CTAColor content={flyWithUsCTA} />

@@ -7,10 +7,10 @@ import Header from "../../components/Header.astro";
 const data = {
   header: {
     imagePath: "/src/assets/uft-piper-multi-engine-aircraft.jpg",
-    imageAlt: "Universal Flight Training Fly Over Sunset",
+    imageAlt: "Universal Aircraft Maintenance Fly Over Sunset",
     headerH1: "Our Blog",
     paragraph:
-      "Get the latest insights and tips from Universal Flight Training. Stay up-to-date with the latest happenings in the world of flight training.",
+      "Get the latest insights and tips from Universal Aircraft Maintenance. Stay up-to-date with the latest happenings in the world of flight training.",
     buttons: [
       {
         name: "Enroll Today",
@@ -27,13 +27,13 @@ const data = {
 };
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
 <BaseLayout
-  pageTitle="Blog | Universal Flight Training"
-  pageDescription="Get the latest insights and tips from Universal Flight Training. Stay up-to-date with the latest happenings in the world of flight training."
+  pageTitle="Blog | Universal Aircraft Maintenance"
+  pageDescription="Get the latest insights and tips from Universal Aircraft Maintenance. Stay up-to-date with the latest happenings in the world of flight training."
   pageKeywords="blog, flight training blog, aviation blog, pilot training blog, flight school blog, latest tips for pilots, latest insights for pilots"
 >
   <!-- Header -->
@@ -72,10 +72,10 @@ const posts = (await getCollection("blog")).sort(
     <div class="mx-auto px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Universal Flight Training Articles
+          Universal Aircraft Maintenance Articles
         </h2>
         <p class="mt-2 text-lg leading-6 text-gray-600">
-          News, insights, and tips from Universal Flight Training. Valuable
+          News, insights, and tips from Universal Aircraft Maintenance. Valuable
           information for aspiring pilots and aviation enthusiasts.
         </p>
         <p class="text-xs text-muted-400">

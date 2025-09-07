@@ -4,11 +4,11 @@ import type { ImageMetadata } from "astro";
 
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 if (!images[data.imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
   );
 ---
 
@@ -33,13 +33,13 @@ if (!images[data.imagePath])
       <div class="text-muted-100 text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-16 justify-center">
         {data.headerH1 && (
           <h1
-            class="text-2xl px-6 lg:px-24 md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal uppercase"
+            class="text-2xl px-6 lg:px-24 md:text-5xl lg:text-6xl drop-shadow-lg xl:text-7xl text-center font-black tracking-normal uppercase  text-pretty"
             set:html={data.headerH1}
           />
         )}
         {data.paragraph && (
           <p
-            class="text-base lg:text-xl mt-3 font-semibold text-muted-200 tracking-wide text-center max-w-3xl font-sans"
+            class="text-base lg:text-xl mt-3 font-semibold text-muted-200 tracking-wide text-center max-w-3xl font-sans  text-pretty"
             set:html={data.paragraph}
           />
         )}

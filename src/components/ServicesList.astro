@@ -78,34 +78,38 @@ const header = {
   >
     {
       services.map((service, _index) => (
-        <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-48 hover:ring-1 hover:ring-primary-300 duration-200">
-          <ImageComp
-            imagePath="/src/assets/uft-plane-on-maintenance.jpg"
-            imageAlt="Aircraft motor maintenance"
-            width={400}
-            height={300}
-            styles="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
-          />
-          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-950 to-primary-950/20 group-hover:bg-primary-800/60 duration-200" />
-          <div class="absolute inset-0 -z-10 rounded-md ring-1 ring-inset ring-gray-900/10" />
+        <a href={`/services/${service.slug}/`}>
+          <article class="relative group w-full lg:m-0 md:w-2/5 lg:w-1/4 isolate flex flex-col justify-end overflow-hidden rounded-md bg-white px-8 pb-8 pt-48 hover:ring-1 hover:ring-primary-300 duration-200">
+            {service.data.heroImage && (
+              <ImageComp
+                imagePath={service.data.heroImage}
+                imageAlt={service.data.imageAlt}
+                width={400}
+                height={300}
+                styles="absolute inset-0 -z-10 h-full w-full object-cover group-hover:scale-110 group-hover:brightness-125 duration-200"
+              />
+            )}
+            <div class="absolute inset-0 -z-10 bg-gradient-to-t from-primary-950 to-primary-950/20 group-hover:bg-primary-800/60 duration-200" />
+            <div class="absolute inset-0 -z-10 rounded-md ring-1 ring-inset ring-gray-900/10" />
 
-          <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-100 bg-gray-900/20 rounded-md px-4 py-2 backdrop-blur-md">
-            <div class="-ml-4 flex items-center gap-x-4">
-              <svg
-                viewBox="0 0 2 2"
-                class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
-              >
-                <circle cx="1" cy="1" r="1" />
-              </svg>
+            <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-100 bg-gray-900/20 rounded-md px-4 py-2 backdrop-blur-md">
+              <div class="-ml-4 flex items-center gap-x-4">
+                <svg
+                  viewBox="0 0 2 2"
+                  class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
+                >
+                  <circle cx="1" cy="1" r="1" />
+                </svg>
+              </div>
+              <h3 class="mt-3 text-lg font-bold leading-6 text-gray-100">
+                <a href={`/services/${service.slug}/`}>
+                  <span class="absolute inset-0 text-gray-100" />
+                  {service.data.title}
+                </a>
+              </h3>
             </div>
-            <h3 class="mt-3 text-lg font-bold leading-6 text-gray-100">
-              <a href={`/services/${service.slug}/`}>
-                <span class="absolute inset-0 text-gray-100" />
-                {service.data.title}
-              </a>
-            </h3>
-          </div>
-        </article>
+          </article>
+        </a>
       ))
     }
   </div>

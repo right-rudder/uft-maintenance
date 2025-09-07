@@ -2,6 +2,8 @@
 title: "Oil Change"
 description: "Protect your engine with UFT Maintenance’s quick-turn oil and filter service, complete with optional lab analysis."
 overview: "At UFT Maintenance, our oil change service is designed to safeguard your engine’s health. We use premium oils and filters, ensuring reliable performance for flights in diverse conditions including the mountain environments we specialize in."
+heroImage: "/src/assets/unsplash-mechanic-checking-old-plane-engine-kai-butcher-eNBAspjaajE-unsplash.jpg"
+imageAlt: "UFT Maintenance"
 included:
   - "Oil drained and replaced to manufacturer specification"
   - "Filter or screen replacement with inspection"

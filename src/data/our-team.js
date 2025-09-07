@@ -11,7 +11,7 @@ const ourTeam = {
     //top header
     header: {
       imagePath: "/src/assets/cessna-in-uft-hangar.jpg",
-      imageAlt: "Cessna airplane in the Universal Flight Training hangar",
+      imageAlt: "Cessna airplane in the Universal Aircraft Maintenance hangar",
       headerH1: `</br><span class="bg-gradient-to-br from-accent-500 via-accent-200 to-accent-400 bg-clip-text text-transparent">Trusted Aircraft Care</span> For Safety and Peace of Mind`,
       paragraph:
         "Our team of experienced mechanics and technicians are dedicated to providing the highest quality aircraft maintenance in Sarasota. Learn more about our crew and how we keep your plane safe, compliant, and ready for every flight.",
@@ -20,7 +20,7 @@ const ourTeam = {
 
     staffGrid: {
       imagePath: "/src/assets/uft-entire-team-picture.png",
-      imageAlt: "Universal Flight Training crew",
+      imageAlt: "Universal Aircraft Maintenance crew",
       upperHeading: "Meet Our Team",
       heading: "About us",
       description: `
@@ -39,7 +39,7 @@ const ourTeam = {
 
     maintenanceTeamGrid: {
       imagePath: "/src/assets/uft-maintenance-team-picture.jpg",
-      imageAlt: "Universal Flight Training maintenance crew",
+      imageAlt: "Universal Aircraft Maintenance maintenance crew",
       upperHeading: "Maintenance Team",
       heading: "Keeping You Safe and Ready to Fly",
       description:
@@ -48,91 +48,96 @@ const ourTeam = {
         {
           name: `Paul Hopkins<br><small class="text-white font-normal text-sm">Mechanic</small>`,
           imagePath: "/src/assets/uft-Paul-Hopkins-Mechanic.jpg",
-          imageAlt: "Universal Flight Training Mechanic Paul Hopkins",
+          imageAlt: "Universal Aircraft Maintenance Mechanic Paul Hopkins",
         },
         {
           name: `Frank Ferney<br><small class="text-white font-normal text-sm">Mechanic</small>`,
           imagePath: "/src/assets/uft-Frank-Ferney-Mechanic.jpg",
-          imageAlt: "Universal Flight Training Mechanic Frank Ferney",
+          imageAlt: "Universal Aircraft Maintenance Mechanic Frank Ferney",
         },
       ],
     },
 
     adminTeamGrid: {
       imagePath: "/src/assets/uft-admin-team-picture.png",
-      imageAlt: "Universal Flight Training crew",
+      imageAlt: "Universal Aircraft Maintenance crew",
       upperHeading: "Admin Team",
-      heading: "The Backbone of Universal Flight Training",
+      heading: "The Backbone of Universal Aircraft Maintenance",
       description:
-        "Our administrative team is committed to delivering top-notch support and service at every stage of your aviation journey. With years of industry experience and a dedication to excellence, our staff is here to ensure your experience with Universal Flight Training is seamless and supportive, helping you stay focused on reaching your aviation goals.",
+        "Our administrative team is committed to delivering top-notch support and service at every stage of your aviation journey. With years of industry experience and a dedication to excellence, our staff is here to ensure your experience with Universal Aircraft Maintenance is seamless and supportive, helping you stay focused on reaching your aviation goals.",
       members: [
         {
-          name: `Jose Santos<br><small class="text-white font-normal text-sm">CEO of Universal Flight Training</small>`,
+          name: `Jose Santos<br><small class="text-white font-normal text-sm">CEO of Universal Aircraft Maintenance</small>`,
           imagePath: "/src/assets/uft-jose-santos-ceo.jpg",
-          imageAlt: "Universal Flight Training CEO Jose Santos",
+          imageAlt: "Universal Aircraft Maintenance CEO Jose Santos",
         },
         {
           name: `Jacob Kyser<br><small class="text-white font-normal text-sm">Vice President</small>`,
           imagePath: "/src/assets/uft-jacob-kyser-vice-president.jpg",
-          imageAlt: "Universal Flight Training Vice President Jacob Kyser",
+          imageAlt: "Universal Aircraft Maintenance Vice President Jacob Kyser",
         },
         {
           name: `Carter Kerwin<br><small class="text-white font-normal text-sm">Admin</small>`,
           imagePath: "/src/assets/uft-Carter-Kerwin-Intern.jpg",
-          imageAlt: "Universal Flight Training Intern Carter Kerwin",
+          imageAlt: "Universal Aircraft Maintenance Intern Carter Kerwin",
         },
       ],
     },
     flightTeamGrid: {
       imagePath: "/src/assets/uft-flight-team-picture.png",
-      imageAlt: "Universal Flight Training crew",
+      imageAlt: "Universal Aircraft Maintenance crew",
       upperHeading: "Flight Instructors Team",
       heading: "Guiding You to New Heights",
       description:
-        "Our team of experienced flight instructors is dedicated to providing top-quality training and mentorship at every step of your aviation journey. With a deep passion for flying and years of expertise, our instructors are here to ensure you receive exceptional guidance and support, helping you stay focused and confident as you work toward achieving your aviation dreams with Universal Flight Training.",
+        "Our team of experienced flight instructors is dedicated to providing top-quality training and mentorship at every step of your aviation journey. With a deep passion for flying and years of expertise, our instructors are here to ensure you receive exceptional guidance and support, helping you stay focused and confident as you work toward achieving your aviation dreams with Universal Aircraft Maintenance.",
       members: [
         {
           name: `Joe Vasquez<br><small class="text-white font-normal text-sm">Chief Flight Instructor</small>`,
           imagePath: "/src/assets/uft-joe-vazquez-chief-instructor.jpg",
           imageAlt:
-            "Universal Flight Training Chief Flight Instructor Joe Vasquez",
+            "Universal Aircraft Maintenance Chief Flight Instructor Joe Vasquez",
         },
         {
           name: `Daniel Gormley<br><small class="text-white font-normal text-sm">Flight Instructor</small>`,
           imagePath: "/src/assets/uft-Daniel-Gormley-instructor.jpg",
           imageAlt:
-            "Universal Flight Training Flight Instructor Daniel Gormley",
+            "Universal Aircraft Maintenance Flight Instructor Daniel Gormley",
         },
         {
           name: `Justin Gorrell<br><small class="text-white font-normal text-sm">Flight Instructor</small>`,
           imagePath: "/src/assets/uft-Justin-Gorrell-instructor.jpg",
           imageAlt:
-            "Universal Flight Training Flight Instructor Justin Gorrell",
+            "Universal Aircraft Maintenance Flight Instructor Justin Gorrell",
         },
         {
           name: `Matthew Bach<br><small class="text-white font-normal text-sm">Flight Instructor</small>`,
           imagePath: "/src/assets/uft-Matthew-Bach-instructor.jpg",
-          imageAlt: "Universal Flight Training Flight Instructor Matthew Bach",
+          imageAlt:
+            "Universal Aircraft Maintenance Flight Instructor Matthew Bach",
         },
         {
           name: `Thomas Donetz<br><small class="text-white font-normal text-sm">Flight Instructor</small>`,
           imagePath: "/src/assets/uft-Thomas-Donetz-instructor.jpg",
-          imageAlt: "Universal Flight Training Flight Instructor Thomas Donetz",
+          imageAlt:
+            "Universal Aircraft Maintenance Flight Instructor Thomas Donetz",
         },
         {
           name: `Gabriel Perez<br><small class="text-white font-normal text-sm">Flight Instructor (CFII)</small>`,
           imagePath: "/src/assets/profile-silhouette-uft.webp",
-          imageAlt: "Universal Flight Training Flight Instructor Gabriel Perez",
+          imageAlt:
+            "Universal Aircraft Maintenance Flight Instructor Gabriel Perez",
         },
         {
           name: `Sydney Jilek<br><small class="text-white font-normal text-sm">Flight Instructor (CFII)</small>`,
           imagePath: "/src/assets/profile-silhouette-uft.webp",
-          imageAlt: "Universal Flight Training Flight Instructor Sydney Jilek",
+          imageAlt:
+            "Universal Aircraft Maintenance Flight Instructor Sydney Jilek",
         },
         {
           name: `Mark Ladwig<br><small class="text-white font-normal text-sm">Flight Instructor (CFII)</small>`,
           imagePath: "/src/assets/profile-silhouette-uft.webp",
-          imageAlt: "Universal Flight Training Flight Instructor Mark Ladwig",
+          imageAlt:
+            "Universal Aircraft Maintenance Flight Instructor Mark Ladwig",
         },
       ],
     },
@@ -142,7 +147,7 @@ const ourTeam = {
       imageAlt: "Right Rudder Marketing team on the runway",
       headerH1: `<span class="text-primary-600">Start Your Aviation Journey</br></span>With a Discovery Flight`,
       paragraph:
-        "Experience the thrill of flying with a discovery flight at Universal Flight Training. Whether you're exploring a new hobby or dreaming of a professional pilot career, this is your chance to take the controls and see Sarasota and the surrounding Gulf Coast like never before. Schedule your discovery flight today and take the first step toward your aviation journey!",
+        "Experience the thrill of flying with a discovery flight at Universal Aircraft Maintenance. Whether you're exploring a new hobby or dreaming of a professional pilot career, this is your chance to take the controls and see Sarasota and the surrounding Gulf Coast like never before. Schedule your discovery flight today and take the first step toward your aviation journey!",
       buttons: [
         {
           name: "Schedule Today",

@@ -1,13 +1,13 @@
 const flyWithUsCTA = {
   imagePath: "/src/assets/uft-avel-chuklanov-copilot-over-shoulder.jpg",
   imageAlt: "Right Rudder Marketing team on the runway",
-  headerH1: `<span class="text-accent-500">Start Your Aviation Journey</br></span>With a Discovery Flight`,
+  headerH1: `<span class="text-accent-500">Trusted Aircraft Care</br></span>With Expert Maintenance`,
   paragraph:
-    "Experience the thrill of flying with a discovery flight at Universal Flight Training. Whether you're exploring a new hobby or dreaming of a professional pilot career, this is your chance to take the controls and see Sarasota and the surrounding Gulf Coast like never before. Schedule your discovery flight today and take the first step toward your aviation journey!",
+    "Keep your aircraft in peak condition with Universal Aircraft Maintenance. From routine inspections and scheduled servicing to specialized repairs, our skilled technicians ensure your plane is always safe, reliable, and ready to fly. Schedule your maintenance today and fly with confidence knowing your aircraft is in expert hands.",
   buttons: [
     {
-      name: "Schedule Today",
-      link: "/discovery-flight",
+      name: "Contact Us",
+      link: "/contact",
       primary: true,
     },
   ],
