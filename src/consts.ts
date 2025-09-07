@@ -51,7 +51,7 @@ export const COURSES = [
 // CHANGE client business info
 export const COMPANY_NAME = "Universal Aircraft Maintenance";
 export const COMPANY_NAME_CAPS = "Universal Aircraft Maintenance";
-export const COMPANY_NICKNAME = "UFT";
+export const COMPANY_NICKNAME = "UAM";
 export const PHONE_NUMBER = "(941) 300-0309";
 export const ADDRESS_LINE_1 = "8140 15th St E";
 export const ADDRESS_LINE_2 = "Sarasota, FL 34243";
