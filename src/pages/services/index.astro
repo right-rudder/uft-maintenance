@@ -87,7 +87,11 @@ const pageData = {
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {
         sorted.map(({ slug, data }) => (
-          <div class="relative card rounded-2xl border bg-white shadow-sm hover:shadow-lg focus-within:shadow-lg transition h-56 sm:h-64">
+          <a
+            href={`/services/${slug}/`}
+            aria-label={`${data.title} details`}
+            class="relative card rounded-2xl border bg-white shadow-sm hover:shadow-lg focus-within:shadow-lg transition h-56 sm:h-64"
+          >
             <a
               href={`/services/${slug}/`}
               class="stretched-link"
@@ -123,7 +127,7 @@ const pageData = {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         ))
       }
     </div>
