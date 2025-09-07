@@ -58,10 +58,14 @@ export const navbarLinks = [
         name: "Our Crew",
         link: "/about/our-crew",
       },
-      // {
-      //   name: "Blog",
-      //   link: "/blog",
-      // },
+      {
+        name: "Blog",
+        link: "https://flyuft.com/blog",
+      },
+      {
+        name: "Universal Flight Training",
+        link: "https://flyuft.com",
+      },
     ],
   },
   {

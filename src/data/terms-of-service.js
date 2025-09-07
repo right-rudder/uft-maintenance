@@ -1,7 +1,7 @@
 const terms = {
   data: {
     heading: `Terms of Service of<br /> Universal Aircraft Maintenance`,
-    subheading: `Last updated: 11/07/2024`,
+    subheading: `Last updated: 09/08/2025`,
     content: [
       {
         heading: "Terms",

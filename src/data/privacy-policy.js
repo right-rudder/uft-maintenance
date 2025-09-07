@@ -1,7 +1,7 @@
 const privacyPolicies = {
   data: {
     heading: `Privacy Policy of<br /> Universal Aircraft Maintenance`,
-    subheading: `Last updated: 11/07/2024`,
+    subheading: `Last updated: 09/08/2025`,
     content: [
       {
         heading: "Introduction",

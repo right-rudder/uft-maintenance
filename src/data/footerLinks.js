@@ -61,8 +61,12 @@ export const footerLinks = [
         link: "/about/our-crew",
       },
       {
-        name: "Contact Us",
-        link: "/contact",
+        name: "Blog",
+        link: "https://flyuft.com/blog",
+      },
+      {
+        name: "Universal Flight Training",
+        link: "https://flyuft.com",
       },
     ],
   },
