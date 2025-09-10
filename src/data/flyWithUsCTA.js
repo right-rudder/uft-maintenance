@@ -7,7 +7,7 @@ const flyWithUsCTA = {
   buttons: [
     {
       name: "Contact Us",
-      link: "/contact",
+      link: "#service-form",
       primary: true,
     },
   ],

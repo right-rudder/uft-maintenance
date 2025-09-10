@@ -1,10 +1,5 @@
 export const mobileNavbarLinks = [
   {
-    name: "Home",
-    link: "/",
-    submenu: [],
-  },
-  {
     name: "Services",
     submenu: [
       {
@@ -51,7 +46,6 @@ export const mobileNavbarLinks = [
   },
   {
     name: "About",
-    link: "/about/our-crew",
     submenu: [
       {
         name: "Our Crew",
@@ -69,7 +63,7 @@ export const mobileNavbarLinks = [
   },
   {
     name: "Contact Us",
-    link: "/contact",
+    link: "/#service-form",
     submenu: [],
   },
 ];

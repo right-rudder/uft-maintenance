@@ -102,7 +102,7 @@ const homePage = {
       buttons: [
         {
           name: "Contact us",
-          link: "/contact",
+          link: "#service-form",
           primary: true,
         },
       ],
