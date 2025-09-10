@@ -27,9 +27,10 @@ const pageData = {
 ---
 
 <style>
-  /* Keep the same flip mechanics as before */
+  /* Flip card mechanics */
   .card {
     perspective: 1200px;
+    overflow: hidden;
   }
   .card-inner {
     position: relative;
@@ -52,23 +53,18 @@ const pageData = {
     justify-content: center;
     padding: 1.5rem;
     border-radius: 1rem;
-
-    /* Prevent mirrored text on either side */
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
   }
 
-  /* Front remains upright */
   .card-front {
     transform: rotateY(0deg);
   }
-
-  /* Back is pre-rotated so it reads normally when the inner flips */
   .card-back {
     transform: rotateY(180deg);
   }
 
-  /* Make entire card clickable without affecting transform tree */
+  /* Make entire card clickable */
   .stretched-link::after {
     content: "";
     position: absolute;
@@ -84,22 +80,18 @@ const pageData = {
   <HeaderScreen content={pageData.header} />
 
   <section class="max-w-7xl mx-auto px-6 py-16">
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {
         sorted.map(({ slug, data }) => (
           <a
             href={`/services/${slug}/`}
             aria-label={`${data.title} details`}
-            class="relative card rounded-2xl border bg-white shadow-sm hover:shadow-lg focus-within:shadow-lg transition h-56 sm:h-64"
+            class="relative block card rounded-2xl border bg-white shadow-sm hover:shadow-lg focus-within:shadow-lg transition h-56 sm:h-64"
           >
-            <a
-              href={`/services/${slug}/`}
-              class="stretched-link"
-              aria-label={`${data.title} details`}
-            />
+            <span class="stretched-link" aria-hidden="true" />
 
             <div class="card-inner">
-              {/* FRONT — title only */}
+              {/* FRONT — title + optional image */}
               <div class="card-face card-front bg-white">
                 {data.heroImage && (
                   <ImageComp
@@ -111,12 +103,12 @@ const pageData = {
                     loading="lazy"
                   />
                 )}
-                <h2 class="relative text-xl font-semibold text-gray-900 text-center">
+                <h2 class="relative z-10 text-xl font-semibold text-gray-900 text-center">
                   {data.title}
                 </h2>
               </div>
 
-              {/* BACK — bg-accent-500 & description only; text not inverted */}
+              {/* BACK — bg-accent-500 & description */}
               <div class="card-face card-back">
                 <div class="absolute inset-0 rounded-2xl bg-accent-500" />
                 <div class="relative z-10 text-center px-4">
